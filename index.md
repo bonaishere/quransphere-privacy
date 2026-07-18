@@ -6,7 +6,7 @@ permalink: /
 
 # Privacy Policy — QuranSphere
 
-_Last updated: 17 July 2026_
+_Last updated: 18 July 2026_
 
 ## Summary (plain language)
 
@@ -32,13 +32,14 @@ The app makes these requests **directly from your device** to the services below
 | Prayer times | Aladhan API | your approximate coordinates | fetch precise times for your location — sent automatically whenever the app knows where you are |
 | Nearby mosques | OpenStreetMap Overpass | your approximate coordinates | find mosques around you — sent only when you open that screen |
 | City search | OpenStreetMap Nominatim | the city text you type | turn it into coordinates |
-| Extra translations / tafsir | Quran.com API | the verse requested | fetch the text you asked for |
+| Extra translations | QuranEnc.com | the verse requested | fetch the translation you asked for. QuranEnc is published by the Rowad Translation Center (Saudi Ministry of Islamic Affairs) |
 | Recitation audio | EveryAyah | the surah/verse requested | stream or download the recitation |
-| Zakat nisab | goldprice.org | nothing about you — just the request | fetch the current gold/silver price |
 
 There is no AI assistant. Earlier builds had an optional one that used an API key you supplied; it has been removed, and any key you had stored is deleted when you update.
 
-Prayer times, the Qibla, the full Quran, tafsir, translation, hadith and azkar all work with **none** of these services. The app is fully usable with no network at all.
+The live gold/silver price lookup for zakat was also removed. Nisab values are entered by hand, so the zakat calculator now contacts nothing at all.
+
+Prayer times, the Qibla, the full Quran, its translations, hadith and azkar all work with **none** of these services. The app is fully usable with no network at all.
 
 ## Location
 
@@ -65,6 +66,12 @@ You can skip location permission and enter a city by hand instead; every locatio
 | Vibrate | Vibrate-mode prayer alerts, tasbih haptics, and the haptic pulse in the accessible Qibla mode. |
 
 The app does **not** request camera, microphone, contacts, or file-storage access.
+
+**Importing your own adhan.** You can point the app at an audio file you already have, to use as the
+call to prayer. This uses Android's own file picker: you choose one file, the app copies it into its
+own private storage, and it never gains access to anything else on your device. The file stays on
+your phone — it is not uploaded, and we never see it. This feature exists because recordings from
+Makkah, Madinah and well-known reciters are copyrighted and we cannot lawfully include them.
 
 ## Purchases
 
