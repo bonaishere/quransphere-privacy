@@ -6,7 +6,7 @@ permalink: /
 
 # Privacy Policy — QuranSphere
 
-_Last updated: 18 July 2026_
+_Last updated: 19 July 2026_
 
 ## Summary (plain language)
 
@@ -14,7 +14,7 @@ QuranSphere is an offline-first Islamic app. **We do not run a server, we have n
 
 We have no analytics, no advertising SDKs, and no crash-reporting backend. There is no "us" on the network to collect anything.
 
-One kind of data does leave your phone: to show prayer times and find nearby mosques, the app sends your **approximate location** (about 100 m — never precise GPS) straight from your device to two independent services. It goes to them, not to us, and it is never tied to your name or any identifier. The details are below, and we would rather spell them out than hide behind "we collect nothing".
+One kind of data does leave your phone: to show prayer times and find nearby mosques, the app sends your **approximate location** (about 100 m — never precise GPS) straight from your device to independent services. It goes to them, not to us, and it is never tied to your name or any identifier. The details are below, and we would rather spell them out than hide behind "we collect nothing".
 
 ## What stays on your device (never sent to us)
 
@@ -32,14 +32,18 @@ The app makes these requests **directly from your device** to the services below
 | Prayer times | Aladhan API | your approximate coordinates | fetch precise times for your location — sent automatically whenever the app knows where you are |
 | Nearby mosques | OpenStreetMap Overpass | your approximate coordinates | find mosques around you — sent only when you open that screen |
 | City search | OpenStreetMap Nominatim | the city text you type | turn it into coordinates |
-| Extra translations | QuranEnc.com | the verse requested | fetch the translation you asked for. QuranEnc is published by the Rowad Translation Center (Saudi Ministry of Islamic Affairs) |
+| Auto calc-method | Android system geocoder (Google on most devices) | your approximate coordinates | look up your country to pick the locally-conventional calculation method — sent automatically unless you choose a method by hand |
+| Extra Quran translations | QuranEnc.com — published by the Rowad Translation Center (Saudi Ministry of Islamic Affairs) | the verse requested | fetch a translation you chose to add — sent only when you open it |
 | Recitation audio | EveryAyah | the surah/verse requested | stream or download the recitation |
+| Extra adhan voices | GitHub (our own release files) | the name of the file being downloaded | fetch an adhan recording you chose to add. A plain download — no account, no identifier, and no location |
+
+That table is the complete list. The app contacts no other service.
 
 There is no AI assistant. Earlier builds had an optional one that used an API key you supplied; it has been removed, and any key you had stored is deleted when you update.
 
-The live gold/silver price lookup for zakat was also removed. Nisab values are entered by hand, so the zakat calculator now contacts nothing at all.
+The zakat calculator no longer fetches gold or silver prices from any service. It used to call goldprice.org; that request is gone, you enter the nisab value yourself, and the calculator now works entirely offline.
 
-Prayer times, the Qibla, the full Quran, its translations, hadith and azkar all work with **none** of these services. The app is fully usable with no network at all.
+Prayer times, the Qibla, the full Quran, the bundled translations, hadith and azkar all work with **none** of these services. The app is fully usable with no network at all.
 
 ## Location
 
@@ -47,7 +51,7 @@ Location is used only to compute prayer times, the Qibla direction, and nearby m
 
 **Approximate only.** The app asks Android for coarse location (roughly 100 m) and never for precise GPS. On Android 12 and newer it cannot access precise location at all. On older versions the permission is coarser-grained, but the app still only ever reads an approximate fix.
 
-Your coordinates are sent to the two services named above so those features work. They are **never stored on any server we operate** — we operate none — and are never associated with an identity. We cannot tell you who requested what, because we never see it.
+Your coordinates are sent to the services named above so those features work. They are **never stored on any server we operate** — we operate none — and are never associated with an identity. We cannot tell you who requested what, because we never see it.
 
 Background location is disabled entirely — the app cannot read your location when it is not open.
 
@@ -67,11 +71,9 @@ You can skip location permission and enter a city by hand instead; every locatio
 
 The app does **not** request camera, microphone, contacts, or file-storage access.
 
-**Importing your own adhan.** You can point the app at an audio file you already have, to use as the
-call to prayer. This uses Android's own file picker: you choose one file, the app copies it into its
-own private storage, and it never gains access to anything else on your device. The file stays on
-your phone — it is not uploaded, and we never see it. This feature exists because recordings from
-Makkah, Madinah and well-known reciters are copyrighted and we cannot lawfully include them.
+## Importing your own adhan
+
+You can use your own recording as the call to prayer. Tapping **import** opens your device's own file picker, you choose a single audio file, and the app copies that one file into its private storage so it can play at prayer time. The app receives nothing except the file you pick — it cannot browse your storage, it never reads a second file, and the imported audio is **never uploaded anywhere**. It stays on your device and is deleted when you remove it in the app or uninstall.
 
 ## Purchases
 
