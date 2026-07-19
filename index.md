@@ -36,6 +36,7 @@ The app makes these requests **directly from your device** to the services below
 | Extra Quran translations | QuranEnc.com — published by the Rowad Translation Center (Saudi Ministry of Islamic Affairs) | the verse requested | fetch a translation you chose to add — sent only when you open it |
 | Recitation audio | EveryAyah | the surah/verse requested | stream or download the recitation |
 | Extra adhan voices | GitHub (our own release files) | the name of the file being downloaded | fetch an adhan recording you chose to add. A plain download — no account, no identifier, and no location |
+| Hadith collections | GitHub (our own release files) | the name of the file being downloaded | fetch the hadith database the first time you open the hadith section. A plain download — no account, no identifier, and no location. It stays on your device afterwards, and you can delete it again from Settings |
 
 That table is the complete list. The app contacts no other service.
 
@@ -43,7 +44,7 @@ There is no AI assistant. Earlier builds had an optional one that used an API ke
 
 The zakat calculator no longer fetches gold or silver prices from any service. It used to call goldprice.org; that request is gone, you enter the nisab value yourself, and the calculator now works entirely offline.
 
-Prayer times, the Qibla, the full Quran, the bundled translations, hadith and azkar all work with **none** of these services. The app is fully usable with no network at all.
+Prayer times, the Qibla, the full Quran, the bundled translations and the azkar all work with **none** of these services — they are inside the app and never need the network. The one exception is the hadith collections, which are a separate download (the row above): they need the network once, and work offline from then on.
 
 ## Location
 
