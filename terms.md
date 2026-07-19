@@ -43,11 +43,17 @@ for a qualified scholar. That includes, without limitation:
 - **Ruqyah, learning material, daily facts and thematic verse selections.** Study material,
   not medical or religious advice. Seek medical care when you need it.
 
-**Scholarly review status.** The Quran text, translations, hadith and supplications in the
-app are reproduced from their licensed publishers, but they have **not yet been certified
-for accuracy by a scholarly reviewing body**. Every dataset carries a `reviewed = 0` flag
-and the app tells you so on the Credits screen. Treat the app as a convenience, and treat a
-printed, certified *mushaf* and a qualified scholar as authoritative.
+**Scholarly review status.** The Quran text, translations, hadith and supplications are
+reproduced from institutional publishers — Tanzil, the Rowad Translation Center of the Saudi
+Ministry of Islamic Affairs, and the King Fahd Glorious Quran Printing Complex — and are
+carried without modification. **This app has not, however, been independently certified for
+accuracy by any scholarly body**, and some material in it was written for the app rather than
+taken from a publisher: the English glosses of the 99 Names, the thematic verse index, the
+ruqyah and learning-hub selections, and the tajweed colouring. Those are our work and carry
+no scholarly endorsement.
+
+Treat the app as a convenience. A printed, certified *mushaf* and a qualified scholar are
+authoritative; this is not.
 
 ## 3. No warranty
 
@@ -175,10 +181,14 @@ QuranSphere تطبيق إسلامي مجاني يعمل دون اتصال بال
 - **الرقية ومواد التعلّم والفوائد اليومية واختيارات الآيات الموضوعية.** مواد للاستئناس، وليست
   استشارة طبية ولا دينية. واطلب العلاج الطبي متى احتجت إليه.
 
-**حالة المراجعة العلمية.** نص القرآن والترجمات والأحاديث والأذكار في التطبيق منقولة عن ناشريها
-المرخِّصين، لكنها **لم تُعتمد بعد من جهة مراجعة علمية**. وكل مجموعة بيانات تحمل العلامة
-`reviewed = 0`، والتطبيق يبيّن ذلك في شاشة «المصادر». فاعتبر التطبيق وسيلة تيسير، واعتبر
-المصحف المطبوع المعتمد والعالم المؤهَّل هما المرجع.
+**حالة المراجعة العلمية.** نص القرآن والترجمات والأحاديث والأذكار منقولة عن ناشرين مؤسسيين —
+مشروع تنزيل، ومركز رواد الترجمة التابع لوزارة الشؤون الإسلامية بالمملكة العربية السعودية، ومجمع
+الملك فهد لطباعة المصحف الشريف — ومنقولة دون تعديل. غير أن **هذا التطبيق لم يُعتمد اعتمادًا
+مستقلًا من أي جهة علمية**، وفيه مواد كُتبت له خصيصًا لا مأخوذة عن ناشر: شروح أسماء الله الحسنى
+بالإنجليزية، والفهرس الموضوعي للآيات، واختيارات الرقية ومواد التعلّم، وتلوين أحكام التجويد. وهذه
+من عملنا ولا تحمل أي اعتماد علمي.
+
+فاعتبر التطبيق وسيلة تيسير. والمصحف المطبوع المعتمد والعالم المؤهَّل هما المرجع، لا هذا التطبيق.
 
 ## ٣. إخلاء الضمان
 
