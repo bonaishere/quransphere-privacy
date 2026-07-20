@@ -6,7 +6,7 @@ permalink: /terms.html
 
 # Terms of Use — QuranSphere
 
-_Last updated: 19 July 2026_ · [العربية ↓](#شروط-الاستخدام--quransphere)
+_Last updated: 20 July 2026_ · [العربية ↓](#شروط-الاستخدام--quransphere)
 
 By installing or using QuranSphere ("the app"), you agree to these terms. If you do not
 agree with them, please do not use the app.
@@ -51,6 +51,11 @@ accuracy by any scholarly body**, and some material in it was written for the ap
 taken from a publisher: the English glosses of the 99 Names, the thematic verse index, the
 ruqyah and learning-hub selections, and the tajweed colouring. Those are our work and carry
 no scholarly endorsement.
+
+On the ruqyah screen each passage now shows the hadith that establishes it, reproduced from
+HadeethEnc with that publisher's own grading and attribution — or, where HadeethEnc does not
+publish it, a plain reference to the collection and number. What remains ours there is the
+choice of which passages to gather, and that choice carries no scholarly endorsement.
 
 Treat the app as a convenience. A printed, certified *mushaf* and a qualified scholar are
 authoritative; this is not.
@@ -146,7 +151,7 @@ mandatory consumer protections available to you where you live.
 
 # شروط الاستخدام — QuranSphere
 
-_آخر تحديث: ١٩ يوليو ٢٠٢٦_ · [English ↑](#terms-of-use--quransphere)
+_آخر تحديث: ٢٠ يوليو ٢٠٢٦_ · [English ↑](#terms-of-use--quransphere)
 
 باستخدامك تطبيق QuranSphere («التطبيق») فإنك توافق على هذه الشروط. وإن كنت لا توافق عليها،
 فالرجاء عدم استخدام التطبيق.
@@ -187,6 +192,10 @@ QuranSphere تطبيق إسلامي مجاني يعمل دون اتصال بال
 مستقلًا من أي جهة علمية**، وفيه مواد كُتبت له خصيصًا لا مأخوذة عن ناشر: شروح أسماء الله الحسنى
 بالإنجليزية، والفهرس الموضوعي للآيات، واختيارات الرقية ومواد التعلّم، وتلوين أحكام التجويد. وهذه
 من عملنا ولا تحمل أي اعتماد علمي.
+
+وفي شاشة الرقية صار كل مقطع يعرض الحديث الذي يدل عليه، منقولًا عن HadeethEnc بتخريج ذلك الناشر
+وحكمه على الحديث — أو، فيما لا ينشره HadeethEnc، إحالة مجردة إلى الكتاب ورقم الحديث. والذي يبقى
+من عملنا هناك هو اختيار المقاطع المجموعة، وهذا الاختيار لا يحمل أي اعتماد علمي.
 
 فاعتبر التطبيق وسيلة تيسير. والمصحف المطبوع المعتمد والعالم المؤهَّل هما المرجع، لا هذا التطبيق.
 

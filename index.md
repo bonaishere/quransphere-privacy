@@ -6,7 +6,7 @@ permalink: /
 
 # Privacy Policy — QuranSphere
 
-_Last updated: 19 July 2026_
+_Last updated: 20 July 2026_
 
 ## Summary (plain language)
 
@@ -21,6 +21,7 @@ One kind of data does leave your phone: to show prayer times and find nearby mos
 - Reading state, bookmarks, notes, highlights, collections
 - Prayer log, qada counter, hayd tracker, fasting log, khatma progress
 - Tasbih counts, achievements, home-dashboard layout, all settings
+- Recitation audio you download for offline listening
 - Your app-lock PIN — never stored, in any form. Only a salted PBKDF2 hash of it is kept, inside the Android Keystore.
 
 ## Data sent to third parties (only to deliver a feature you use)
@@ -35,8 +36,6 @@ The app makes these requests **directly from your device** to the services below
 | Auto calc-method | Android system geocoder (Google on most devices) | your approximate coordinates | look up your country to pick the locally-conventional calculation method — sent automatically unless you choose a method by hand |
 | Extra Quran translations | QuranEnc.com — published by the Rowad Translation Center (Saudi Ministry of Islamic Affairs) | the verse requested | fetch a translation you chose to add — sent only when you open it |
 | Recitation audio | EveryAyah | the surah/verse requested | stream or download the recitation |
-| Extra adhan voices | GitHub (our own release files) | the name of the file being downloaded | fetch an adhan recording you chose to add. A plain download — no account, no identifier, and no location |
-| Hadith collections | GitHub (our own release files) | the name of the file being downloaded | fetch the hadith database the first time you open the hadith section. A plain download — no account, no identifier, and no location. It stays on your device afterwards, and you can delete it again from Settings |
 
 That table is the complete list. The app contacts no other service.
 
@@ -44,7 +43,26 @@ There is no AI assistant. Earlier builds had an optional one that used an API ke
 
 The zakat calculator no longer fetches gold or silver prices from any service. It used to call goldprice.org; that request is gone, you enter the nisab value yourself, and the calculator now works entirely offline.
 
-Prayer times, the Qibla, the full Quran, the bundled translations and the azkar all work with **none** of these services — they are inside the app and never need the network. The one exception is the hadith collections, which are a separate download (the row above): they need the network once, and work offline from then on.
+Prayer times, the Qibla, the full Quran, the bundled translations, the hadith collections and the azkar all work with **none** of these services — they are inside the app and never need the network.
+
+## Downloaded recitation audio
+
+You can save recitations for offline listening — a single surah from the reader, or a
+reciter's whole recitation from **More → Reciter**. The audio files are fetched from
+EveryAyah and written to the app's **own private storage** on your device. This needs no
+storage permission, the app cannot see or touch anything else on your phone, and nothing
+about what you downloaded is reported anywhere.
+
+A full recitation is roughly 1 GB, so the app tells you the size before it starts and
+refuses to begin if the device is short on space. You control the rest:
+
+- **Storage limit.** *More → Downloads* sets a cap (500 MB by default, or unlimited).
+  When individually downloaded surahs go over it, the app deletes the ones you played
+  least recently to stay inside the limit you chose.
+- **Reciters you keep offline are exempt.** They are never deleted automatically and do
+  not count toward the cap — you asked for them, so only you remove them.
+- **Delete any time.** *More → Downloads* deletes a single surah or everything at once.
+  Uninstalling the app, or clearing its data in Android settings, removes all of it.
 
 ## Location
 
