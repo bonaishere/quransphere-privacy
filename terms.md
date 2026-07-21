@@ -6,7 +6,7 @@ permalink: /terms.html
 
 # Terms of Use — QuranSphere
 
-_Last updated: 20 July 2026_ · [العربية ↓](#شروط-الاستخدام--quransphere)
+_Last updated: 22 July 2026_ · [العربية ↓](#شروط-الاستخدام--quransphere)
 
 By installing or using QuranSphere ("the app"), you agree to these terms. If you do not
 agree with them, please do not use the app.
@@ -91,7 +91,8 @@ by using it.
 ## 5. Third-party services
 
 Some features send a request from your device directly to an independent service — prayer
-times, mosque search, city search, extra translations, recitation audio. Those services are
+times, mosque search, city search, extra translations, recitation audio, optional adhan
+clips. Those services are
 not operated by us, we do not receive or proxy the data, and each is governed by its own
 terms and privacy policy. Their availability, accuracy and conduct are their own.
 
@@ -104,8 +105,15 @@ The app reproduces third-party content under licence, and reproduces it **withou
 modification**: the Quran text (Tanzil.net, CC BY 3.0), translations, hadith and
 supplications (Rowad Translation Center, Saudi Ministry of Islamic Affairs, via QuranEnc.com
 and HadeethEnc.com), recitation and the Uthmanic Hafs font (King Fahd Glorious Quran Printing
-Complex), adhan recordings (individually licensed, Creative Commons), fonts (SIL Open Font
-Licence), and map data (© OpenStreetMap contributors, ODbL 1.0).
+Complex), the pre-prayer takbīr (Creative Commons), fonts (SIL Open Font Licence), and map
+data (© OpenStreetMap contributors, ODbL 1.0).
+
+**Adhan recordings are the exception, and are described plainly here rather than left to the
+list above.** They are not published under a free licence. Rights in each recording remain
+with the muezzin, the mosque, or the original broadcaster. The clips offered as downloads are
+not hosted or re-published by us: your device fetches each one from archive.org, the public
+archive it already sits on, and only when you tap it. If you hold rights in any recording
+used in the app and want it removed, contact us (§10) — it will be removed.
 
 Full attribution for every item is in the app under **More → Credits**, and open-source
 package licences under **About → Open-source licences**. Those licences run to the original
@@ -224,7 +232,8 @@ QuranSphere تطبيق إسلامي مجاني يعمل دون اتصال بال
 ## ٥. الخدمات الخارجية
 
 بعض الميزات ترسل طلباً من جهازك مباشرة إلى خدمة مستقلة — مواقيت الصلاة، والبحث عن المساجد،
-والبحث عن المدن، والترجمات الإضافية، وصوت التلاوة. وهذه الخدمات لا نديرها، ولا نستقبل بياناتها
+والبحث عن المدن، والترجمات الإضافية، وصوت التلاوة، وتنزيل الأذانات الاختيارية. وهذه الخدمات
+لا نديرها، ولا نستقبل بياناتها
 ولا نمرّرها، ويحكم كلاً منها شروطها وسياسة خصوصيتها. وتوافرها ودقتها وتصرّفها شأنها هي.
 
 وتفاصيل ما يُرسل، وإلى من، ولماذا، مذكورة كاملة في
@@ -235,8 +244,14 @@ QuranSphere تطبيق إسلامي مجاني يعمل دون اتصال بال
 يعرض التطبيق محتوى الغير بموجب ترخيص، وينقله **دون تعديل**: نص القرآن (Tanzil.net، رخصة
 CC BY 3.0)، والترجمات والأحاديث والأذكار (مركز رواد الترجمة، وزارة الشؤون الإسلامية بالمملكة
 العربية السعودية، عبر QuranEnc.com و HadeethEnc.com)، والتلاوة وخط حفص العثماني (مجمع الملك فهد
-لطباعة المصحف الشريف)، وتسجيلات الأذان (كل منها مرخَّص على حدة برخص المشاع الإبداعي)، والخطوط
-(رخصة الخطوط المفتوحة SIL)، وبيانات الخرائط (© مساهمو OpenStreetMap، رخصة ODbL 1.0).
+لطباعة المصحف الشريف)، وتكبيرة ما قبل الصلاة (برخصة المشاع الإبداعي)، والخطوط (رخصة الخطوط
+المفتوحة SIL)، وبيانات الخرائط (© مساهمو OpenStreetMap، رخصة ODbL 1.0).
+
+**وتسجيلات الأذان مستثناة، ونذكرها هنا صراحةً لا ضمن ما سبق.** فهي ليست منشورة برخصة حرّة،
+وحقوق كل تسجيل تبقى للمؤذّن أو للمسجد أو لجهة البثّ الأصلية. أمّا التسجيلات المعروضة للتنزيل
+فلا نستضيفها ولا نعيد نشرها: إنّما يجلبها جهازك من archive.org، وهو الأرشيف العام الموجودة
+عليه أصلاً، وعند ضغطك عليها فحسب. وإن كنت تملك حقوق أيّ تسجيل مستعمل في التطبيق وأردت
+إزالته، فراسلنا (§١٠) ليُزال.
 
 والنسبة الكاملة لكل عنصر موجودة داخل التطبيق في **المزيد ← المصادر**، وتراخيص الحزم مفتوحة
 المصدر في **حول ← تراخيص المصادر المفتوحة**. وهذه التراخيص تعود لأصحاب الحقوق الأصليين لا لنا،

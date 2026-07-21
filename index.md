@@ -6,7 +6,7 @@ permalink: /
 
 # Privacy Policy — QuranSphere
 
-_Last updated: 21 July 2026_
+_Last updated: 22 July 2026_
 
 ## Summary (plain language)
 
@@ -14,7 +14,7 @@ QuranSphere is an offline-first Islamic app. **We do not run a server, we have n
 
 We have no analytics, no advertising SDKs, and no crash-reporting backend. There is no "us" on the network to collect anything.
 
-One kind of data does leave your phone: to show prayer times and find nearby mosques, the app sends your **approximate location** (about 100 m — never precise GPS) straight from your device to independent services. It goes to them, not to us, and it is never tied to your name or any identifier. The details are below, and we would rather spell them out than hide behind "we collect nothing".
+One kind of data does leave your phone: to show prayer times and find nearby mosques, the app sends your **approximate location** straight from your device to independent services. Android is only ever asked for coarse location (never precise GPS), and the coordinates are rounded to about one kilometre before they are sent — enough for prayer times and a mosque search, not enough to place you. It goes to them, not to us, and it is never tied to your name or any identifier. The details are below, and we would rather spell them out than hide behind "we collect nothing".
 
 ## What stays on your device (never sent to us)
 
@@ -30,12 +30,13 @@ The app makes these requests **directly from your device** to the services below
 
 | Feature | Service | What is sent | Why |
 |---|---|---|---|
-| Prayer times | Aladhan API | your approximate coordinates | fetch precise times for your location — sent automatically whenever the app knows where you are |
-| Nearby mosques | OpenStreetMap Overpass | your approximate coordinates | find mosques around you — sent only when you open that screen |
+| Prayer times | Aladhan API | your approximate coordinates, rounded to ~1 km | fetch precise times for your location — sent automatically whenever the app knows where you are |
+| Nearby mosques | OpenStreetMap Overpass — public mirrors run by unaffiliated operators (`overpass.kumi.systems`, `overpass-api.de`, `overpass.private.coffee`, `overpass.osm.jp`), tried in order until one answers, and sometimes two at once when the first is slow | your approximate coordinates, rounded to ~1 km | find mosques around you — sent only when you open that screen |
 | City search | OpenStreetMap Nominatim | the city text you type | turn it into coordinates |
 | Auto calc-method | Android system geocoder (Google on most devices) | your approximate coordinates | look up your country to pick the locally-conventional calculation method — sent automatically unless you choose a method by hand |
 | Extra Quran translations | QuranEnc.com — published by the Rowad Translation Center (Saudi Ministry of Islamic Affairs) | the verse requested | fetch a translation you chose to add — sent only when you open it |
 | Recitation audio | EveryAyah | the surah/verse requested | stream or download the recitation |
+| Optional adhan clips | archive.org | the clip requested | download a muezzin you tapped — the clip is fetched from the public archive it already sits on, not from us |
 
 That table is the complete list. The app contacts no other service.
 
@@ -74,11 +75,19 @@ refuses to begin if the device is short on space. You control the rest:
 - **Delete any time.** *More → Downloads* deletes a single surah or everything at once.
   Uninstalling the app, or clearing its data in Android settings, removes all of it.
 
+## Optional adhan clips
+
+One adhan is built into the app and works with no network at all. The others are marked
+**Tap to download**: tapping one downloads that single clip (under 1 MB) from archive.org
+into the app's own private storage, and it then plays offline like the built-in one. Nothing
+is downloaded until you tap, and the request goes from your device straight to archive.org —
+we do not host these files, proxy the request, or learn which muezzin you chose.
+
 ## Location
 
 Location is used only to compute prayer times, the Qibla direction, and nearby mosques.
 
-**Approximate only.** The app asks Android for coarse location (roughly 100 m) and never for precise GPS. On Android 12 and newer it cannot access precise location at all. On older versions the permission is coarser-grained, but the app still only ever reads an approximate fix.
+**Approximate only, and rounded again before it is sent.** The app asks Android for coarse location and never for precise GPS, then rounds the coordinates to two decimal places (about one kilometre) before any request leaves the device. On Android 12 and newer it cannot access precise location at all. On older versions the permission is coarser-grained, but the app still only ever reads an approximate fix.
 
 Your coordinates are sent to the services named above so those features work. They are **never stored on any server we operate** — we operate none — and are never associated with an identity. We cannot tell you who requested what, because we never see it.
 
