@@ -6,7 +6,7 @@ permalink: /
 
 # Privacy Policy — QuranSphere
 
-_Last updated: 20 July 2026_
+_Last updated: 21 July 2026_
 
 ## Summary (plain language)
 
@@ -21,7 +21,7 @@ One kind of data does leave your phone: to show prayer times and find nearby mos
 - Reading state, bookmarks, notes, highlights, collections
 - Prayer log, qada counter, hayd tracker, fasting log, khatma progress
 - Tasbih counts, achievements, home-dashboard layout, all settings
-- Recitation audio you download for offline listening
+- Recitation audio you download for offline listening — and, if you turn on auto-save, the ayahs you play
 - Your app-lock PIN — never stored, in any form. Only a salted PBKDF2 hash of it is kept, inside the Android Keystore.
 
 ## Data sent to third parties (only to deliver a feature you use)
@@ -53,14 +53,24 @@ EveryAyah and written to the app's **own private storage** on your device. This 
 storage permission, the app cannot see or touch anything else on your phone, and nothing
 about what you downloaded is reported anywhere.
 
+**Auto-saving what you play (optional).** You can also let the app save each ayah as
+you listen, so it replays offline later without fetching it again. The first time you
+play a recitation the app asks whether to turn this on, and you can change it any time in
+*Settings → Audio* — it is **off until you choose**. When on, each ayah you play is
+written to the same private storage as above (fetched from EveryAyah — the same request
+the app already makes to play it), with no extra permission and nothing reported anywhere.
+Ayahs saved this way are exempt from the storage cap, so what you have listened to stays
+available offline; you can remove them any time from *More → Downloads*.
+
 A full recitation is roughly 1 GB, so the app tells you the size before it starts and
 refuses to begin if the device is short on space. You control the rest:
 
 - **Storage limit.** *More → Downloads* sets a cap (500 MB by default, or unlimited).
   When individually downloaded surahs go over it, the app deletes the ones you played
   least recently to stay inside the limit you chose.
-- **Reciters you keep offline are exempt.** They are never deleted automatically and do
-  not count toward the cap — you asked for them, so only you remove them.
+- **Reciters you keep offline, and ayahs auto-saved as you play, are exempt.** They are
+  never deleted automatically and do not count toward the cap — you asked for them, so
+  only you remove them.
 - **Delete any time.** *More → Downloads* deletes a single surah or everything at once.
   Uninstalling the app, or clearing its data in Android settings, removes all of it.
 
