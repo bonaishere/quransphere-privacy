@@ -6,7 +6,7 @@ permalink: /terms.html
 
 # Terms of Use — QuranSphere
 
-_Last updated: 22 July 2026_ · [العربية ↓](#شروط-الاستخدام--quransphere)
+_Last updated: 23 July 2026_ · [العربية ↓](#شروط-الاستخدام--quransphere)
 
 By installing or using QuranSphere ("the app"), you agree to these terms. If you do not
 agree with them, please do not use the app.
@@ -56,6 +56,16 @@ On the ruqyah screen each passage now shows the hadith that establishes it, repr
 HadeethEnc with that publisher's own grading and attribution — or, where HadeethEnc does not
 publish it, a plain reference to the collection and number. What remains ours there is the
 choice of which passages to gather, and that choice carries no scholarly endorsement.
+
+The **occasions of revelation** (*asbab al-nuzul*) shown under a verse are a third case, neither
+ours nor an institutional publisher's. They reproduce al-Wahidi's *Asbab al-Nuzul* (d. 468 AH /
+1075 CE), a classical work in the public domain. The wording is his; only the source site's HTML
+formatting is stripped so the text renders as plain prose. It is the earliest
+work of its genre and the one most commonly cited, but it is **not a filtered collection**: it
+reports occasions with their chains of transmission and passes no judgement on them, and later
+scholars graded some of those reports weak. The app therefore shows this section under a standing
+notice that it awaits scholarly review. Do not treat a narration there as authenticated, and do not
+derive a ruling from one — verify it with a qualified scholar first.
 
 Treat the app as a convenience. A printed, certified *mushaf* and a qualified scholar are
 authoritative; this is not.
@@ -159,7 +169,7 @@ mandatory consumer protections available to you where you live.
 
 # شروط الاستخدام — QuranSphere
 
-_آخر تحديث: ٢٠ يوليو ٢٠٢٦_ · [English ↑](#terms-of-use--quransphere)
+_آخر تحديث: ٢٣ يوليو ٢٠٢٦_ · [English ↑](#terms-of-use--quransphere)
 
 باستخدامك تطبيق QuranSphere («التطبيق») فإنك توافق على هذه الشروط. وإن كنت لا توافق عليها،
 فالرجاء عدم استخدام التطبيق.

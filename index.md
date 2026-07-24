@@ -6,7 +6,7 @@ permalink: /
 
 # Privacy Policy — QuranSphere
 
-_Last updated: 22 July 2026_
+_Last updated: 23 July 2026_
 
 ## Summary (plain language)
 
@@ -66,7 +66,8 @@ available offline; you can remove them any time from *More → Downloads*.
 A full recitation is roughly 1 GB, so the app tells you the size before it starts and
 refuses to begin if the device is short on space. You control the rest:
 
-- **Storage limit.** *More → Downloads* sets a cap (500 MB by default, or unlimited).
+- **Storage limit.** *More → Downloads* sets a cap. It is **unlimited by default**; pick a
+  size there if you want one.
   When individually downloaded surahs go over it, the app deletes the ones you played
   least recently to stay inside the limit you chose.
 - **Reciters you keep offline, and ayahs auto-saved as you play, are exempt.** They are
@@ -82,6 +83,10 @@ One adhan is built into the app and works with no network at all. The others are
 into the app's own private storage, and it then plays offline like the built-in one. Nothing
 is downloaded until you tap, and the request goes from your device straight to archive.org —
 we do not host these files, proxy the request, or learn which muezzin you chose.
+
+## Wear OS watch and home-screen widgets
+
+If you install the QuranSphere companion app on a paired Wear OS watch, the phone shares your prayer times, Qibla direction and tasbih count with it so the watch can show them offline. This moves between your phone and your watch over Android's Wear Data Layer — part of Google Play Services on both devices — so it stays **on your devices**, never reaches a server we operate (we operate none), and the watch app makes no network requests of its own. The home-screen widgets (next-prayer countdown and tasbih) read that same on-device data and send nothing anywhere.
 
 ## Location
 
