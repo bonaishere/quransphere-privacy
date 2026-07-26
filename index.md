@@ -96,15 +96,17 @@ Location is used only to compute prayer times, the Qibla direction, and nearby m
 
 Your coordinates are sent to the services named above so those features work. They are **never stored on any server we operate** — we operate none — and are never associated with an identity. We cannot tell you who requested what, because we never see it.
 
-**Background location is off unless you switch it on, and it is used for exactly one thing.** The home-screen prayer widget computes prayer times on your device, so it stays correct for years without the app ever being opened — but the coordinates it uses are frozen at the last time the app ran, so if you move to another city it would go on showing the times of the city you left. To fix that you can turn on **"Keep the widget right when I travel"** in Locations. Only then does the app ask Android for "Allow all the time", and only then can the widget read where you are while the app is closed.
+**Letting the widget follow you when you travel is on by default, does nothing unless you have given the app location permission, and is used for exactly one thing.** The home-screen prayer widget computes prayer times on your device, so it stays correct for years without the app ever being opened — but the coordinates it uses are frozen at the last time the app ran, so if you move to another city it would go on showing the times of the city you left, with nothing on the card to say so. **"Keep the widget right when I travel"** in Locations is what prevents that, and you can switch it off there.
+
+**The app never asks for "Allow all the time".** It holds only the ordinary "While using the app" location permission — the same one prayer times and Qibla already need. When the widget needs to know where you are, it briefly runs a foreground service, which posts a notification saying the widget is updating its location and stops itself within seconds. You can see it happen; nothing reads your location silently in the background.
 
 Even switched on, it is narrow by design:
 
 - It uses **the last location your phone has already recorded** for some other app or system service, whenever that reading is recent enough to still mean anything.
-- When it is not — which is exactly what arriving somewhere new looks like — it asks Android for **one network location** (worked out from cell towers and Wi-Fi). It never turns on GPS, and it asks at most a few times a day.
-- It does both **only while drawing the widget**, and only if you are on "Current location" — a city you saved by hand is never overridden.
+- When it is not — which is exactly what arriving somewhere new looks like — it takes **one network location** (worked out from cell towers and Wi-Fi). It never turns on GPS, and it does this at most twice a day — or, in the few minutes after your phone tells us its timezone changed, as soon as it can. If it cannot get one then (location switched off, no signal), it waits longer before each further attempt — 15 minutes, then half an hour, then an hour, up to eight — rather than asking again and again.
+- It does both **only for the widget**, and only if you are on "Current location" — a city you saved by hand is never overridden.
 - If it cannot work out where you are, the widget **stops showing times** and asks you to open the app, rather than showing you another city's prayer times as though they were yours.
-- The coordinates are used **on your device only**, to recompute prayer times. Turning this on sends nothing new anywhere, and no location is stored beyond the widget's own current reading.
+- The coordinates are used **on your device only**, to recompute prayer times. Turning this on sends nothing new anywhere. The one reading the widget is currently working from is kept on your device so it can draw without asking again; nothing older is retained.
 - It changes nothing until you have actually moved about 25 km.
 
 You can switch it off in the app at any time, or revoke the permission in Android's settings — the widget re-checks the permission every time it draws, and simply goes back to the last coordinates the app saw.
@@ -116,7 +118,7 @@ You can skip location permission entirely and enter a city by hand instead; ever
 | Permission | Why |
 |---|---|
 | Location (approximate) | Prayer times, Qibla, nearby mosques. Optional — a manually entered city works instead. Precise location is not used; on Android 11 and older the system grants a broader location permission, but the app only ever reads an approximate fix. |
-| Location in the background ("Allow all the time") | **Off unless you switch it on.** Only so the home-screen prayer widget can notice you have moved to another city and recompute, with the app never opened. It uses the last fix your phone already recorded, and asks for one network location (never GPS) when that fix is too old to trust. The coordinates never leave the device. See Location above. |
+| Foreground service (location) | **On by default with "Keep the widget right when I travel", which you can switch off in Locations; it does nothing at all unless you have granted location permission.** Only so the home-screen prayer widget can notice you have moved to another city and recompute, with the app never opened. It runs for a few seconds, shows a notification while it does, and stops itself. It uses the last fix your phone already recorded, and takes one network location (never GPS) when that fix is too old to trust. The coordinates never leave the device. The app does **not** request "Allow all the time". See Location above. |
 | Notifications | The adhan and any reminders you switch on. |
 | Exact alarms | The adhan must sound at the exact prayer instant. An inexact alarm would make the call to prayer late, which defeats the feature. |
 | Foreground service (media playback) | Plays the full adhan and Quran recitation with the screen off or the app closed. |
