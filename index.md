@@ -6,7 +6,7 @@ permalink: /
 
 # Privacy Policy — QuranSphere
 
-_Last updated: 23 July 2026_
+_Last updated: 26 July 2026_
 
 ## Summary (plain language)
 
@@ -96,15 +96,25 @@ Location is used only to compute prayer times, the Qibla direction, and nearby m
 
 Your coordinates are sent to the services named above so those features work. They are **never stored on any server we operate** — we operate none — and are never associated with an identity. We cannot tell you who requested what, because we never see it.
 
-Background location is disabled entirely — the app cannot read your location when it is not open.
+**Background location is off unless you switch it on, and it is used for exactly one thing.** The home-screen prayer widget computes prayer times on your device, so it stays correct for years without the app ever being opened — but the coordinates it uses are frozen at the last time the app ran, so if you move to another city it would go on showing the times of the city you left. To fix that you can turn on **"Keep the widget right when I travel"** in Locations. Only then does the app ask Android for "Allow all the time", and only then can the widget read where you are while the app is closed.
 
-You can skip location permission and enter a city by hand instead; every location-based feature works that way.
+Even switched on, it is narrow by design:
+
+- It reads **only the last location your phone has already recorded** for some other app or system service. It never turns on GPS and never requests a new fix, so it costs no battery.
+- It reads it **only while drawing the widget**, and only if you are on "Current location" — a city you saved by hand is never overridden.
+- The coordinates are used **on your device only**, to recompute prayer times. Turning this on sends nothing new anywhere, and no location is stored beyond the widget's own current reading.
+- It changes nothing until you have actually moved about 25 km.
+
+You can switch it off in the app at any time, or revoke the permission in Android's settings — the widget re-checks the permission every time it draws, and simply goes back to the last coordinates the app saw.
+
+You can skip location permission entirely and enter a city by hand instead; every location-based feature works that way, and the travel option is then neither needed nor offered.
 
 ## Permissions and why each is needed
 
 | Permission | Why |
 |---|---|
 | Location (approximate) | Prayer times, Qibla, nearby mosques. Optional — a manually entered city works instead. Precise location is not used; on Android 11 and older the system grants a broader location permission, but the app only ever reads an approximate fix. |
+| Location in the background ("Allow all the time") | **Off unless you switch it on.** Only so the home-screen prayer widget can notice you have moved to another city and recompute, with the app never opened. It reads the last fix your phone already recorded — it never requests a new one — and the coordinates never leave the device. See Location above. |
 | Notifications | The adhan and any reminders you switch on. |
 | Exact alarms | The adhan must sound at the exact prayer instant. An inexact alarm would make the call to prayer late, which defeats the feature. |
 | Foreground service (media playback) | Plays the full adhan and Quran recitation with the screen off or the app closed. |
