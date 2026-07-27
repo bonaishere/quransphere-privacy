@@ -6,7 +6,7 @@ permalink: /
 
 # Privacy Policy — QuranSphere
 
-_Last updated: 26 July 2026_
+_Last updated: 27 July 2026_
 
 ## Summary (plain language)
 
@@ -78,11 +78,14 @@ refuses to begin if the device is short on space. You control the rest:
 
 ## Optional adhan clips
 
-One adhan is built into the app and works with no network at all. The others are marked
-**Tap to download**: tapping one downloads that single clip (under 1 MB) from archive.org
-into the app's own private storage, and it then plays offline like the built-in one. Nothing
-is downloaded until you tap, and the request goes from your device straight to archive.org —
-we do not host these files, proxy the request, or learn which muezzin you chose.
+Two adhans are built into the app — a full one and a Fajr one — and work with no network at
+all, as do the built-in iqama and pre-adhan cue. You can also choose a different clip for each
+individual prayer; that choice is a setting stored on your device and is sent nowhere. The
+remaining clips are marked **Tap to download**: tapping one downloads that single clip (under
+1 MB) from archive.org into the app's own private storage, and it then plays offline like the
+built-in ones. Nothing is downloaded until you tap, and the request goes from your device
+straight to archive.org — we do not host these files, proxy the request, or learn which
+muezzin you chose.
 
 ## Wear OS watch and home-screen widgets
 
