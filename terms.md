@@ -6,7 +6,7 @@ permalink: /terms.html
 
 # Terms of Use — QuranSphere
 
-_Last updated: 23 July 2026_ · [العربية ↓](#شروط-الاستخدام--quransphere)
+_Last updated: 29 July 2026_ · [العربية ↓](#شروط-الاستخدام--quransphere)
 
 By installing or using QuranSphere ("the app"), you agree to these terms. If you do not
 agree with them, please do not use the app.
@@ -43,10 +43,12 @@ for a qualified scholar. That includes, without limitation:
 - **Ruqyah, learning material, daily facts and thematic verse selections.** Study material,
   not medical or religious advice. Seek medical care when you need it.
 
-**Scholarly review status.** The Quran text, translations, hadith and supplications are
+**Scholarly review status.** The Quran text, translations and hadith are
 reproduced from institutional publishers — Tanzil, the Rowad Translation Center of the Saudi
 Ministry of Islamic Affairs, and the King Fahd Glorious Quran Printing Complex — and are
-carried without modification. **This app has not, however, been independently certified for
+carried without modification. The adhkar text and recordings are from *Hisn al-Muslim* by Sa'id
+bin Ali bin Wahf al-Qahtani, as published by the book's official site, hisnmuslim.com.
+**This app has not, however, been independently certified for
 accuracy by any scholarly body**, and some material in it was written for the app rather than
 taken from a publisher: the English glosses of the 99 Names, the thematic verse index, the
 ruqyah and learning-hub selections, and the tajweed colouring. Those are our work and carry
@@ -101,8 +103,8 @@ by using it.
 ## 5. Third-party services
 
 Some features send a request from your device directly to an independent service — prayer
-times, mosque search, city search, extra translations, recitation audio, optional adhan
-clips. Those services are
+times, mosque search, city search, extra translations, recitation audio, azkar audio, optional
+adhan clips, downloaded languages. Those services are
 not operated by us, we do not receive or proxy the data, and each is governed by its own
 terms and privacy policy. Their availability, accuracy and conduct are their own.
 
@@ -112,11 +114,16 @@ What is sent, to whom, and why, is set out in full in the
 ## 6. Content, licences and intellectual property
 
 The app reproduces third-party content under licence, and reproduces it **without
-modification**: the Quran text (Tanzil.net, CC BY 3.0), translations, hadith and
-supplications (Rowad Translation Center, Saudi Ministry of Islamic Affairs, via QuranEnc.com
-and HadeethEnc.com), recitation and the Uthmanic Hafs font (King Fahd Glorious Quran Printing
+modification**: the Quran text (Tanzil.net, CC BY 3.0), translations and hadith (Rowad
+Translation Center, Saudi Ministry of Islamic Affairs, via QuranEnc.com and HadeethEnc.com),
+recitation and the Uthmanic Hafs font (King Fahd Glorious Quran Printing
 Complex), the pre-prayer takbīr (Creative Commons), fonts (SIL Open Font Licence), and map
 data (© OpenStreetMap contributors, ODbL 1.0).
+
+**The adhkar (supplications) are reproduced separately.** The text and recordings are from
+*Hisn al-Muslim* by Sa'id bin Ali bin Wahf al-Qahtani, as published by the book's official
+site, hisnmuslim.com. The hadith collection remains from HadeethEnc.com (Rowad Translation
+Center), under the terms named above.
 
 **Adhan recordings are the exception, and are described plainly here rather than left to the
 list above.** They are not published under a free licence. Rights in each recording remain
@@ -124,6 +131,17 @@ with the muezzin, the mosque, or the original broadcaster. The clips offered as 
 not hosted or re-published by us: your device fetches each one from archive.org, the public
 archive it already sits on, and only when you tap it. If you hold rights in any recording
 used in the app and want it removed, contact us (§10) — it will be removed.
+
+**Downloaded languages carry the same terms as the bundled ones.** When you add a language,
+its Quran translation and Mukhtasar tafsir are downloaded from QuranEnc.com and its hadith
+text from a pre-built file we host; all of it is Rowad Translation Center content, reproduced
+without modification, with the published version shown in Credits. Downloading a language
+does not give you any right in that text beyond your personal use of the app.
+
+**The interface text in languages other than Arabic and English is machine-translated and has
+not been reviewed by a native speaker.** The app says so on screen. This applies only to the
+app's own wording — buttons, labels, explanations. It does not apply to the Quran, tafsir or
+hadith text, which is reproduced from its publisher unmodified in every language.
 
 Full attribution for every item is in the app under **More → Credits**, and open-source
 package licences under **About → Open-source licences**. Those licences run to the original
@@ -169,7 +187,7 @@ mandatory consumer protections available to you where you live.
 
 # شروط الاستخدام — QuranSphere
 
-_آخر تحديث: ٢٣ يوليو ٢٠٢٦_ · [English ↑](#terms-of-use--quransphere)
+_آخر تحديث: ٢٩ يوليو ٢٠٢٦_ · [English ↑](#terms-of-use--quransphere)
 
 باستخدامك تطبيق QuranSphere («التطبيق») فإنك توافق على هذه الشروط. وإن كنت لا توافق عليها،
 فالرجاء عدم استخدام التطبيق.
@@ -204,9 +222,11 @@ QuranSphere تطبيق إسلامي مجاني يعمل دون اتصال بال
 - **الرقية ومواد التعلّم والفوائد اليومية واختيارات الآيات الموضوعية.** مواد للاستئناس، وليست
   استشارة طبية ولا دينية. واطلب العلاج الطبي متى احتجت إليه.
 
-**حالة المراجعة العلمية.** نص القرآن والترجمات والأحاديث والأذكار منقولة عن ناشرين مؤسسيين —
+**حالة المراجعة العلمية.** نص القرآن والترجمات والأحاديث منقولة عن ناشرين مؤسسيين —
 مشروع تنزيل، ومركز رواد الترجمة التابع لوزارة الشؤون الإسلامية بالمملكة العربية السعودية، ومجمع
-الملك فهد لطباعة المصحف الشريف — ومنقولة دون تعديل. غير أن **هذا التطبيق لم يُعتمد اعتمادًا
+الملك فهد لطباعة المصحف الشريف — ومنقولة دون تعديل. أما نص الأذكار وتسجيلاتها الصوتية فمصدرها
+كتاب *حصن المسلم* لسعيد بن علي بن وهف القحطاني، كما ينشره الموقع الرسمي للكتاب hisnmuslim.com.
+غير أن **هذا التطبيق لم يُعتمد اعتمادًا
 مستقلًا من أي جهة علمية**، وفيه مواد كُتبت له خصيصًا لا مأخوذة عن ناشر: شروح أسماء الله الحسنى
 بالإنجليزية، والفهرس الموضوعي للآيات، واختيارات الرقية ومواد التعلّم، وتلوين أحكام التجويد. وهذه
 من عملنا ولا تحمل أي اعتماد علمي.
@@ -242,7 +262,9 @@ QuranSphere تطبيق إسلامي مجاني يعمل دون اتصال بال
 ## ٥. الخدمات الخارجية
 
 بعض الميزات ترسل طلباً من جهازك مباشرة إلى خدمة مستقلة — مواقيت الصلاة، والبحث عن المساجد،
-والبحث عن المدن، والترجمات الإضافية، وصوت التلاوة، وتنزيل الأذانات الاختيارية. وهذه الخدمات
+والبحث عن المدن، والترجمات الإضافية، وصوت التلاوة، وصوت الأذكار، وتنزيل الأذانات الاختيارية،
+واللغات المنزَّلة. وهذه
+الخدمات
 لا نديرها، ولا نستقبل بياناتها
 ولا نمرّرها، ويحكم كلاً منها شروطها وسياسة خصوصيتها. وتوافرها ودقتها وتصرّفها شأنها هي.
 
@@ -252,16 +274,29 @@ QuranSphere تطبيق إسلامي مجاني يعمل دون اتصال بال
 ## ٦. المحتوى والتراخيص والملكية الفكرية
 
 يعرض التطبيق محتوى الغير بموجب ترخيص، وينقله **دون تعديل**: نص القرآن (Tanzil.net، رخصة
-CC BY 3.0)، والترجمات والأحاديث والأذكار (مركز رواد الترجمة، وزارة الشؤون الإسلامية بالمملكة
+CC BY 3.0)، والترجمات والأحاديث (مركز رواد الترجمة، وزارة الشؤون الإسلامية بالمملكة
 العربية السعودية، عبر QuranEnc.com و HadeethEnc.com)، والتلاوة وخط حفص العثماني (مجمع الملك فهد
 لطباعة المصحف الشريف)، وتكبيرة ما قبل الصلاة (برخصة المشاع الإبداعي)، والخطوط (رخصة الخطوط
 المفتوحة SIL)، وبيانات الخرائط (© مساهمو OpenStreetMap، رخصة ODbL 1.0).
+
+**والأذكار (الأدعية) منقولة على حدة.** نصّها وتسجيلاتها الصوتية من كتاب *حصن المسلم* لسعيد بن
+علي بن وهف القحطاني، كما ينشره الموقع الرسمي للكتاب hisnmuslim.com. أما مجموعة الأحاديث فتبقى من
+HadeethEnc.com (مركز رواد الترجمة)، بموجب الشروط المذكورة أعلاه.
 
 **وتسجيلات الأذان مستثناة، ونذكرها هنا صراحةً لا ضمن ما سبق.** فهي ليست منشورة برخصة حرّة،
 وحقوق كل تسجيل تبقى للمؤذّن أو للمسجد أو لجهة البثّ الأصلية. أمّا التسجيلات المعروضة للتنزيل
 فلا نستضيفها ولا نعيد نشرها: إنّما يجلبها جهازك من archive.org، وهو الأرشيف العام الموجودة
 عليه أصلاً، وعند ضغطك عليها فحسب. وإن كنت تملك حقوق أيّ تسجيل مستعمل في التطبيق وأردت
 إزالته، فراسلنا (§١٠) ليُزال.
+
+**واللغات المنزَّلة تخضع لنفس شروط اللغات المضمَّنة.** فعند إضافتك لغةً، تُنزَّل ترجمة القرآن
+وتفسير المختصر من QuranEnc.com، وتُنزَّل الأحاديث من ملف جاهز نستضيفه نحن؛ وكلّه من محتوى مركز
+رواد الترجمة، منقول دون تعديل، مع بيان رقم النسخة المنشورة في شاشة المصادر. ولا يمنحك تنزيل
+لغةٍ أي حق في نصّها يتجاوز استخدامك الشخصي للتطبيق.
+
+**ونصوص واجهة التطبيق في اللغات غير العربية والإنجليزية مترجمة آلياً ولم يراجعها ناطق بها.**
+والتطبيق يبيّن ذلك على الشاشة. وهذا يخصّ ألفاظ التطبيق نفسه — الأزرار والعناوين والشروح — دون
+نصّ القرآن أو التفسير أو الحديث، فهذه منقولة عن ناشرها دون تعديل في كل لغة.
 
 والنسبة الكاملة لكل عنصر موجودة داخل التطبيق في **المزيد ← المصادر**، وتراخيص الحزم مفتوحة
 المصدر في **حول ← تراخيص المصادر المفتوحة**. وهذه التراخيص تعود لأصحاب الحقوق الأصليين لا لنا،

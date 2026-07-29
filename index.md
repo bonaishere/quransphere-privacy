@@ -6,7 +6,7 @@ permalink: /
 
 # Privacy Policy — QuranSphere
 
-_Last updated: 27 July 2026_
+_Last updated: 29 July 2026_
 
 ## Summary (plain language)
 
@@ -36,15 +36,28 @@ The app makes these requests **directly from your device** to the services below
 | Place name and auto calc-method | Android system geocoder (Google on most devices) | your approximate coordinates | turn your coordinates into a place name — shown on the home-screen widget so you can see which location its times are for — and look up your country to pick the locally-conventional calculation method. Sent automatically whenever the app knows where you are. The place name is kept on your device and is never sent anywhere. |
 | Extra Quran translations | QuranEnc.com — published by the Rowad Translation Center (Saudi Ministry of Islamic Affairs) | the verse requested | fetch a translation you chose to add — sent only when you open it |
 | Recitation audio | EveryAyah | the surah/verse requested | stream or download the recitation |
+| Azkar audio | hisnmuslim.com | the dhikr requested | stream a recording when you press play, and cache it on the device once it has played through, so replaying it later needs no further request |
 | Optional adhan clips | archive.org | the clip requested | download a muezzin you tapped — the clip is fetched from the public archive it already sits on, not from us |
+| Language packs — Quran translation and tafsir | QuranEnc.com — published by the Rowad Translation Center (Saudi Ministry of Islamic Affairs) | the file requested | download the translation and the Mukhtasar tafsir for a language you chose — sent only when you tap that language and confirm the download |
+| Language packs — hadith | `bonaishere.github.io` (GitHub Pages) | the file requested | download the pre-built hadith text for a language you chose. It is pre-built because HadeethEnc serves one hadith per request, and fetching ~2,776 of them from your device would take about eighteen minutes and place that load on a ministry's donated server |
 
 That table is the complete list. The app contacts no other service.
+
+None of these requests carries an identifier of any kind — no account, no device id, no advertising id, nothing that ties one request to another or to you. They are ordinary file and API requests, and each service sees only what any web request shows it (an IP address and the file asked for).
 
 There is no AI assistant. Earlier builds had an optional one that used an API key you supplied; it has been removed, and any key you had stored is deleted when you update.
 
 The zakat calculator no longer fetches gold or silver prices from any service. It used to call goldprice.org; that request is gone, you enter the nisab value yourself, and the calculator now works entirely offline.
 
-Prayer times, the Qibla, the full Quran, the bundled translations, the hadith collections and the azkar all work with **none** of these services — they are inside the app and never need the network.
+Prayer times, the Qibla, the full Quran, the bundled translations, the hadith collections and the azkar text all work with **none** of these services — they are inside the app and never need the network. Azkar **audio** is the exception: every recording streams from hisnmuslim.com the first time you play it (see the table above), and is cached on the device once it has played through — a recording you pause, navigate away from, or that the app backgrounding interrupts is not cached, and streams again next time. Caching is automatic, with no toggle to turn it off. These recordings go to the app's OS-managed cache directory, not the storage described below — there is no in-app screen to browse or delete them individually; Android may clear this cache under storage pressure on its own, and uninstalling the app (or clearing its data in Android settings) removes it entirely.
+
+## Downloaded languages
+
+The app ships with Arabic and English inside it. Every other language is downloaded when you pick it: three database files — the Quran translation, the Mukhtasar tafsir, and the hadith text — totalling roughly 5–8 MB.
+
+They are stored in the app's own private storage on your device, and nothing about them is sent anywhere. You can delete a language at any time from Settings, which removes all three files; uninstalling the app removes them too. A download that fails or is interrupted deletes whatever landed rather than leaving a partial language behind.
+
+The interface text for those languages is **not** downloaded — it ships inside the app, so switching language works before and without any download.
 
 ## Downloaded recitation audio
 
