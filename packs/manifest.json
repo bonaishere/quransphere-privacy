@@ -2,6 +2,15 @@
   "schema": 1,
   "packs": [
     {
+      "code": "fr",
+      "file": "fr_hadith.db",
+      "bytes": 4816896,
+      "sha256": "62023a19965087e03ecdc105b5582361bc9f1685dc6dd9e23820ceb7491dbca5",
+      "rows": 1790,
+      "source": "HadeethEnc.com (Rowad Translation Center)",
+      "license": "Rowad Translation Center (Saudi Ministry of Islamic Affairs) — may be downloaded and re-published: no modification, addition or deletion; source and version credited; kept current with the published version; no advertising alongside the content."
+    },
+    {
       "code": "id",
       "file": "id_hadith.db",
       "bytes": 5152768,
