@@ -6,7 +6,7 @@ permalink: /
 
 # Privacy Policy — QuranSphere
 
-_Last updated: 29 July 2026_
+_Last updated: 30 July 2026_
 
 ## Summary (plain language)
 
@@ -23,6 +23,8 @@ One kind of data does leave your phone: to show prayer times and find nearby mos
 - Tasbih counts, achievements, home-dashboard layout, all settings
 - Recitation audio you download for offline listening — and, if you turn on auto-save, the ayahs you play
 - Your app-lock PIN — never stored, in any form. Only a salted PBKDF2 hash of it is kept, inside the Android Keystore.
+
+Those records are held in an on-device store the app **encrypts at rest**, with a random key kept in the Android Keystore — so lifting the files off the phone does not read them. Downloaded audio and language files are ordinary media and database files in the app's private storage and are not encrypted; they are published content, and say nothing about you.
 
 ## Data sent to third parties (only to deliver a feature you use)
 
@@ -43,6 +45,8 @@ The app makes these requests **directly from your device** to the services below
 
 That table is the complete list. The app contacts no other service.
 
+Two things sit outside it because the app does not make the request itself. On the mosques screen, **Directions**, **Call** and **Website** hand off to another app — your maps app, your dialer, your browser — carrying the *mosque's* coordinates, phone number or address, never yours; what that app then does is governed by its own policy, not this one. The About screen's rows (email, the Play listing) open your mail or store app the same way.
+
 None of these requests carries an identifier of any kind — no account, no device id, no advertising id, nothing that ties one request to another or to you. They are ordinary file and API requests, and each service sees only what any web request shows it (an IP address and the file asked for).
 
 There is no AI assistant. Earlier builds had an optional one that used an API key you supplied; it has been removed, and any key you had stored is deleted when you update.
@@ -53,9 +57,9 @@ Prayer times, the Qibla, the full Quran, the bundled translations, the hadith co
 
 ## Downloaded languages
 
-The app ships with Arabic and English inside it. Every other language is downloaded when you pick it: three database files — the Quran translation, the Mukhtasar tafsir, and the hadith text — totalling roughly 5–8 MB.
+The app ships with Arabic and English inside it. Every other language is downloaded when you pick it — from the globe on the home screen, or in *More → Settings → Appearance* — as three database files: the Quran translation, the Mukhtasar tafsir, and the hadith text, totalling roughly 5–8 MB. Each row tells you the size before you tap it, and nothing downloads until you do.
 
-They are stored in the app's own private storage on your device, and nothing about them is sent anywhere. You can delete a language at any time from Settings, which removes all three files; uninstalling the app removes them too. A download that fails or is interrupted deletes whatever landed rather than leaving a partial language behind.
+They are stored in the app's own private storage on your device, and nothing about them is sent anywhere. A download that fails or is interrupted deletes whatever landed rather than leaving a partial language behind. There is no in-app screen for removing a language once it has landed; clearing the app's data in Android settings, or uninstalling the app, removes them all.
 
 The interface text for those languages is **not** downloaded — it ships inside the app, so switching language works before and without any download.
 
@@ -70,9 +74,12 @@ about what you downloaded is reported anywhere.
 **Auto-saving what you play (optional).** You can also let the app save each ayah as
 you listen, so it replays offline later without fetching it again. The first time you
 play a recitation the app asks whether to turn this on, and you can change it any time in
-*Settings → Audio* — it is **off until you choose**. When on, each ayah you play is
-written to the same private storage as above (fetched from EveryAyah — the same request
-the app already makes to play it), with no extra permission and nothing reported anywhere.
+*More → Settings → Audio* — it is **off until you choose**. When on, each ayah you play
+**through to the end** is written to the same private storage as above (fetched from
+EveryAyah — the same request the app already makes to play it), with no extra permission
+and nothing reported anywhere; an ayah you skip past or stop part-way through is not
+saved. The same screen chooses whether those saves may use mobile data — **Wi-Fi only by
+default**.
 Ayahs saved this way are exempt from the storage cap, so what you have listened to stays
 available offline; you can remove them any time from *More → Downloads*.
 
@@ -150,7 +157,7 @@ You can use your own recording as the call to prayer. Tapping **import** opens y
 
 ## Purchases
 
-QuranSphere is free, and no feature is behind a paywall. Donations are entirely optional, give you nothing in return, and are handled **outside** the app by PayPal or Vodafone Cash — we never see your card or billing details. There are no in-app purchases and no Google Play Billing.
+QuranSphere is free, and no feature is behind a paywall. There are no in-app purchases, no subscriptions, no Google Play Billing, and no donation link — the app takes no money at all, so it never sees a payment, a card, or a billing detail.
 
 ## Children
 

@@ -6,7 +6,7 @@ permalink: /terms.html
 
 # Terms of Use — QuranSphere
 
-_Last updated: 29 July 2026_ · [العربية ↓](#شروط-الاستخدام--quransphere)
+_Last updated: 30 July 2026_ · [العربية ↓](#شروط-الاستخدام--quransphere)
 
 By installing or using QuranSphere ("the app"), you agree to these terms. If you do not
 agree with them, please do not use the app.
@@ -108,6 +108,11 @@ adhan clips, downloaded languages. Those services are
 not operated by us, we do not receive or proxy the data, and each is governed by its own
 terms and privacy policy. Their availability, accuracy and conduct are their own.
 
+The app also hands off to other apps on your device: a mosque's **Directions**, phone number
+or website opens your maps app, dialer or browser, and the About screen's rows open your mail
+or store app. Those apps are not ours either, and what they do with what they are handed is
+governed by their terms, not these.
+
 What is sent, to whom, and why, is set out in full in the
 [Privacy Policy](https://bonaishere.github.io/quransphere-privacy/).
 
@@ -187,7 +192,7 @@ mandatory consumer protections available to you where you live.
 
 # شروط الاستخدام — QuranSphere
 
-_آخر تحديث: ٢٩ يوليو ٢٠٢٦_ · [English ↑](#terms-of-use--quransphere)
+_آخر تحديث: ٣٠ يوليو ٢٠٢٦_ · [English ↑](#terms-of-use--quransphere)
 
 باستخدامك تطبيق QuranSphere («التطبيق») فإنك توافق على هذه الشروط. وإن كنت لا توافق عليها،
 فالرجاء عدم استخدام التطبيق.
@@ -267,6 +272,10 @@ QuranSphere تطبيق إسلامي مجاني يعمل دون اتصال بال
 الخدمات
 لا نديرها، ولا نستقبل بياناتها
 ولا نمرّرها، ويحكم كلاً منها شروطها وسياسة خصوصيتها. وتوافرها ودقتها وتصرّفها شأنها هي.
+
+كما يُحيل التطبيق إلى تطبيقات أخرى على جهازك: فـ**الاتجاهات** إلى مسجد أو رقم هاتفه أو موقعه
+تفتح تطبيق الخرائط أو الهاتف أو المتصفّح عندك، وصفوف شاشة «حول» تفتح تطبيق البريد أو المتجر.
+وهذه التطبيقات ليست لنا كذلك، وما تفعله بما يُسلَّم إليها تحكمه شروطها هي لا هذه الشروط.
 
 وتفاصيل ما يُرسل، وإلى من، ولماذا، مذكورة كاملة في
 [سياسة الخصوصية](https://bonaishere.github.io/quransphere-privacy/).
