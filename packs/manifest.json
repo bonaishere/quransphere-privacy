@@ -191,6 +191,15 @@
       "license": "Rowad Translation Center (Saudi Ministry of Islamic Affairs) — may be downloaded and re-published: no modification, addition or deletion; source and version credited; kept current with the published version; no advertising alongside the content."
     },
     {
+      "code": "uz",
+      "file": "uz_hadith.db",
+      "bytes": 1245184,
+      "sha256": "de1f5fe91f006864a57f71e5baac7701db1088504ac9b63355577713417e4bf4",
+      "rows": 420,
+      "source": "HadeethEnc.com (Rowad Translation Center)",
+      "license": "Rowad Translation Center (Saudi Ministry of Islamic Affairs) — may be downloaded and re-published: no modification, addition or deletion; source and version credited; kept current with the published version; no advertising alongside the content."
+    },
+    {
       "code": "vi",
       "file": "vi_hadith.db",
       "bytes": 2818048,
