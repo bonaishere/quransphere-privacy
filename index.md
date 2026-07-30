@@ -136,6 +136,10 @@ You can switch it off in the app at any time, or revoke the permission in Androi
 
 You can skip location permission entirely and enter a city by hand instead; every location-based feature works that way, and the travel option is then neither needed nor offered.
 
+**Prayer alerts do the same thing with the location already on your device, and take no new reading of any kind.** So that the adhan does not stop on a phone you have not opened in a while, the app keeps a queue of upcoming prayer alerts and extends it — when a prayer alert fires, when your phone restarts, and when Android wakes the app for a moment (see *Background processing* below). Extending it recomputes prayer times **on your device** from the coordinates already saved and the settings you chose. Nothing is sent, nothing is fetched, and unlike the widget option above this never asks your phone where it is: it only reads what is already stored.
+
+Because those coordinates are frozen at the last time you opened the app, the same travelling problem applies — so the app applies the same rule. If your phone's timezone no longer matches the one those coordinates were saved in, and you have not pinned a city by hand, the app **stops extending the queue** rather than go on announcing the prayer times of the city you left. Alerts already scheduled still sound; opening the app puts it right.
+
 ## Permissions and why each is needed
 
 | Permission | Why |
@@ -143,9 +147,10 @@ You can skip location permission entirely and enter a city by hand instead; ever
 | Location (approximate) | Prayer times, Qibla, nearby mosques. Optional — a manually entered city works instead. Precise location is not used; on Android 11 and older the system grants a broader location permission, but the app only ever reads an approximate fix. |
 | Foreground service (location) | **On by default with "Keep the widget right when I travel", which you can switch off in Locations; it does nothing at all unless you have granted location permission.** Only so the home-screen prayer widget can notice you have moved to another city and recompute, with the app never opened. It runs for a few seconds, shows a notification while it does, and stops itself. It uses the last fix your phone already recorded, and takes one network location (never GPS) when that fix is too old to trust. The coordinates never leave the device. The app does **not** request "Allow all the time". See Location above. |
 | Notifications | The adhan and any reminders you switch on. |
-| Exact alarms | The adhan must sound at the exact prayer instant. An inexact alarm would make the call to prayer late, which defeats the feature. |
+| Exact alarms | The adhan must sound at the exact prayer instant. An inexact alarm would make the call to prayer late, which defeats the feature. Android grants this to alarm-clock apps automatically and it cannot be revoked; it lets the app set alarms and nothing else — it reads no data and reaches no network. |
 | Foreground service (media playback) | Plays the full adhan and Quran recitation with the screen off or the app closed. |
-| Run at startup | Re-arms the prayer alarms after you restart your phone, so the adhan does not silently stop working. |
+| Run at startup | Re-arms the prayer alarms after you restart your phone **or after the app updates** — both wipe every alarm the app had set, so without this the adhan would silently stop until you next opened it. |
+| Background processing | Lets Android wake the app roughly twice a day, for a moment, to extend the queue of upcoming prayer alerts. Nothing is sent or fetched: it reads the settings and the last location already on your device, recomputes prayer times on the device, and re-sets the alarms. Without it the queue eventually runs out and the adhan stops on a phone that has not been opened for a while. |
 | Ignore battery optimisations | Optional, and only prompted. Without it, some manufacturers' battery managers delay or kill the exact prayer alarm. |
 | Vibrate | Vibrate-mode prayer alerts, tasbih haptics, and the haptic pulse in the accessible Qibla mode. |
 

@@ -84,8 +84,14 @@ contacts (§5) will remain available or correct.
 
 Device behaviour is outside our control. Notifications and the adhan alarm depend on your
 device's power management, permissions and Android version, and some manufacturers delay or
-suppress background alarms regardless of what the app requests. **Do not rely on the app as
-your only means of knowing a prayer time.**
+suppress background alarms regardless of what the app requests.
+
+Prayer alerts are scheduled in advance, as a queue the app extends whenever the operating
+system lets it run — after an alert fires, after a restart, and during periodic background
+wakes the system grants at its own discretion and may withhold entirely (in battery-saver
+mode, for example, or on iOS with Background App Refresh switched off). If the app is never
+allowed to run, the queue eventually empties and alerts stop until you open it again.
+**Do not rely on the app as your only means of knowing a prayer time.**
 
 ## 4. Limitation of liability
 
@@ -252,7 +258,13 @@ QuranSphere تطبيق إسلامي مجاني يعمل دون اتصال بال
 
 وسلوك الجهاز خارج عن سيطرتنا: التنبيهات ومنبّه الأذان تعتمد على إدارة الطاقة في جهازك
 وأذوناته وإصدار أندرويد فيه، وبعض المصنّعين يؤخّرون التنبيهات الخلفية أو يمنعونها مهما طلب
-التطبيق. **فلا تجعل التطبيق وسيلتك الوحيدة لمعرفة دخول الوقت.**
+التطبيق.
+
+وتُجدوَل تنبيهات الصلاة مسبقًا في قائمة يمدّدها التطبيق كلما أتاح له نظام التشغيل أن يعمل:
+بعد انطلاق تنبيه، وبعد إعادة تشغيل الجهاز، وأثناء إيقاظات خلفية دورية يمنحها النظام وفق
+تقديره وقد يمنعها كليًّا (كما في وضع توفير الطاقة، أو على iOS عند إيقاف تحديث التطبيقات في
+الخلفية). فإن لم يُتَح للتطبيق أن يعمل البتة نفدت القائمة في النهاية وتوقفت التنبيهات حتى
+تفتحه من جديد. **فلا تجعل التطبيق وسيلتك الوحيدة لمعرفة دخول الوقت.**
 
 ## ٤. حدود المسؤولية
 
