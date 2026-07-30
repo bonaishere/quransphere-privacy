@@ -2,6 +2,15 @@
   "schema": 1,
   "packs": [
     {
+      "code": "as",
+      "file": "as_hadith.db",
+      "bytes": 3706880,
+      "sha256": "b7489c7baf589d404233e0cef9bca03137441d9bfecbe4a1b0e3ca1a91c05efd",
+      "rows": 851,
+      "source": "HadeethEnc.com (Rowad Translation Center)",
+      "license": "Rowad Translation Center (Saudi Ministry of Islamic Affairs) — may be downloaded and re-published: no modification, addition or deletion; source and version credited; kept current with the published version; no advertising alongside the content."
+    },
+    {
       "code": "bs",
       "file": "bs_hadith.db",
       "bytes": 4587520,
@@ -65,11 +74,74 @@
       "license": "Rowad Translation Center (Saudi Ministry of Islamic Affairs) — may be downloaded and re-published: no modification, addition or deletion; source and version credited; kept current with the published version; no advertising alongside the content."
     },
     {
+      "code": "ml",
+      "file": "ml_hadith.db",
+      "bytes": 4263936,
+      "sha256": "0393cb7725645898edbc4a7ae57224a03b46db500d92a9f4697db109f2e1e877",
+      "rows": 920,
+      "source": "HadeethEnc.com (Rowad Translation Center)",
+      "license": "Rowad Translation Center (Saudi Ministry of Islamic Affairs) — may be downloaded and re-published: no modification, addition or deletion; source and version credited; kept current with the published version; no advertising alongside the content."
+    },
+    {
+      "code": "si",
+      "file": "si_hadith.db",
+      "bytes": 6156288,
+      "sha256": "6616b8ac4e2aed096fb1c6af2425ac71f5f677c26bba9ade3cc49f9eebcd982d",
+      "rows": 1318,
+      "source": "HadeethEnc.com (Rowad Translation Center)",
+      "license": "Rowad Translation Center (Saudi Ministry of Islamic Affairs) — may be downloaded and re-published: no modification, addition or deletion; source and version credited; kept current with the published version; no advertising alongside the content."
+    },
+    {
+      "code": "te",
+      "file": "te_hadith.db",
+      "bytes": 4333568,
+      "sha256": "72fa884028bf2fb818baedf4484b41109005fb9a07f839ac30d331273dac7c91",
+      "rows": 854,
+      "source": "HadeethEnc.com (Rowad Translation Center)",
+      "license": "Rowad Translation Center (Saudi Ministry of Islamic Affairs) — may be downloaded and re-published: no modification, addition or deletion; source and version credited; kept current with the published version; no advertising alongside the content."
+    },
+    {
+      "code": "th",
+      "file": "th_hadith.db",
+      "bytes": 3936256,
+      "sha256": "2a75c4158f86fdb8a1fec0dd2649b8e0d70b264960ba2554410794a5c3279e09",
+      "rows": 846,
+      "source": "HadeethEnc.com (Rowad Translation Center)",
+      "license": "Rowad Translation Center (Saudi Ministry of Islamic Affairs) — may be downloaded and re-published: no modification, addition or deletion; source and version credited; kept current with the published version; no advertising alongside the content."
+    },
+    {
+      "code": "tl",
+      "file": "tl_hadith.db",
+      "bytes": 4984832,
+      "sha256": "bb6dc6edc7806e645a5655054098fd1960a1508223f2460b8764efc5c1e5789c",
+      "rows": 1949,
+      "source": "HadeethEnc.com (Rowad Translation Center)",
+      "license": "Rowad Translation Center (Saudi Ministry of Islamic Affairs) — may be downloaded and re-published: no modification, addition or deletion; source and version credited; kept current with the published version; no advertising alongside the content."
+    },
+    {
       "code": "tr",
       "file": "tr_hadith.db",
       "bytes": 4984832,
       "sha256": "82d13909e695ab9c27d1a02a92be60773d9bf389207e5363c0ca1b9e130bb287",
       "rows": 2150,
+      "source": "HadeethEnc.com (Rowad Translation Center)",
+      "license": "Rowad Translation Center (Saudi Ministry of Islamic Affairs) — may be downloaded and re-published: no modification, addition or deletion; source and version credited; kept current with the published version; no advertising alongside the content."
+    },
+    {
+      "code": "ug",
+      "file": "ug_hadith.db",
+      "bytes": 4108288,
+      "sha256": "8fc39de7052b1f2504818df9823c45cb26042df242380e5f78670208a80d36b7",
+      "rows": 1096,
+      "source": "HadeethEnc.com (Rowad Translation Center)",
+      "license": "Rowad Translation Center (Saudi Ministry of Islamic Affairs) — may be downloaded and re-published: no modification, addition or deletion; source and version credited; kept current with the published version; no advertising alongside the content."
+    },
+    {
+      "code": "vi",
+      "file": "vi_hadith.db",
+      "bytes": 2818048,
+      "sha256": "94f576b4035ed573091720d324fa32d8da7fdd074cf791346110c840f4fd078a",
+      "rows": 1203,
       "source": "HadeethEnc.com (Rowad Translation Center)",
       "license": "Rowad Translation Center (Saudi Ministry of Islamic Affairs) — may be downloaded and re-published: no modification, addition or deletion; source and version credited; kept current with the published version; no advertising alongside the content."
     },
