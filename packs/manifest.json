@@ -226,5 +226,88 @@
       "source": "HadeethEnc.com (Rowad Translation Center)",
       "license": "Rowad Translation Center (Saudi Ministry of Islamic Affairs) — may be downloaded and re-published: no modification, addition or deletion; source and version credited; kept current with the published version; no advertising alongside the content."
     }
+  ],
+  "tafsir": [
+    {
+      "id": "ar.tabari",
+      "file": "tafsir-tabari.db",
+      "bytes": 53559296,
+      "sha256": "d50224d76b8505d715a628658b798dec14fe933134e0c3681637313e72f45707",
+      "rows": 6145,
+      "excludedSurahs": [
+        40,
+        114
+      ],
+      "source": "جامع البيان في تأويل آي القرآن — تأليف أبي جعفر محمد بن جرير الطبري (ت ٣١٠هـ/٩٢٣م)؛ تحقيق أحمد شاكر؛ النص الرقمي من الموسوعة القرآنية (quranpedia.net، كتاب ٤)",
+      "license": "The underlying tafsir is public domain by age — al-Tabari died 310 AH / 923 CE. This quranpedia.net edition, however, is a modern critical tahqiq by Ahmad Shakir for Mu'assasat al-Risala, and that scholarly apparatus (collation, hadith takhrij) is not typesetting. It ships by project-owner decision, on the basis that the publisher does not object — not on a public-domain finding for this edition. See docs/PERMISSIONS.md #15 and TAFSIR_CLASSICS_CLEARED in this file."
+    },
+    {
+      "id": "ar.ibnkathir",
+      "file": "tafsir-ibnkathir.db",
+      "bytes": 37068800,
+      "sha256": "1c2b923fc665d308c2adc5042bf83bc041a5e6c42e2fb5f5caa895be52deb146",
+      "rows": 6053,
+      "excludedSurahs": [
+        114
+      ],
+      "source": "تفسير القرآن العظيم — تأليف أبي الفداء إسماعيل بن كثير (ت ٧٧٤هـ/١٣٧٣م)؛ تحقيق سامي سلامة؛ النص الرقمي من الموسوعة القرآنية (quranpedia.net، كتاب ١٣٦)",
+      "license": "The underlying tafsir is public domain by age — Ibn Kathir died 774 AH / 1373 CE. This quranpedia.net edition, however, is a modern critical tahqiq by Sami Salama for Dar Tayyiba, and that scholarly apparatus (collation, hadith takhrij) is not typesetting. It ships by project-owner decision, on the basis that the publisher does not object — not on a public-domain finding for this edition. See docs/PERMISSIONS.md #16 and TAFSIR_CLASSICS_CLEARED in this file."
+    },
+    {
+      "id": "ar.qurtubi",
+      "file": "tafsir-qurtubi.db",
+      "bytes": 85815296,
+      "sha256": "3f817feca4f726de7c726a7960aa9cba89fb40a148e369e57c4ec0beab6a5dec",
+      "rows": 6224,
+      "excludedSurahs": [
+        114
+      ],
+      "source": "الجامع لأحكام القرآن — تأليف شمس الدين أبي عبد الله محمد بن أحمد الأنصاري القرطبي (ت ٦٧١هـ/١٢٧٣م)؛ تحقيق أحمد البردوني؛ النص الرقمي من الموسوعة القرآنية (quranpedia.net، كتاب ٣٦٦)",
+      "license": "The underlying tafsir is public domain by age — al-Qurtubi died 671 AH / 1273 CE. This quranpedia.net edition, however, is a modern critical tahqiq by Ahmad al-Bardouni for Dar al-Kutub al-Misriyya, and that scholarly apparatus is not typesetting. It ships by project-owner decision, on the basis that the publisher does not object — not on a public-domain finding for this edition. See docs/PERMISSIONS.md #17 and TAFSIR_CLASSICS_CLEARED in this file."
+    },
+    {
+      "id": "ar.baghawi",
+      "file": "tafsir-baghawi.db",
+      "bytes": 37842944,
+      "sha256": "410cff7821974bf1c9c97d6f7851393413deb83f140e104f214f0aa53a815330",
+      "rows": 6230,
+      "excludedSurahs": [
+        114
+      ],
+      "source": "معالم التنزيل — تأليف محيي السنة أبي محمد الحسين بن مسعود البغوي (ت ٥١٦هـ/١١٢٢م)؛ تحقيق محمد عبد الله النمر وآخرين؛ النص الرقمي من الموسوعة القرآنية (quranpedia.net، كتاب ٢)",
+      "license": "The underlying tafsir is public domain by age — al-Baghawi died 516 AH / 1122 CE. This quranpedia.net edition, however, is a modern critical tahqiq by Muhammad 'Abdullah al-Nimr and others for Dar Tayyiba, and that scholarly apparatus is not typesetting. It ships by project-owner decision, on the basis that the publisher does not object — not on a public-domain finding for this edition. See docs/PERMISSIONS.md #18 and TAFSIR_CLASSICS_CLEARED in this file."
+    }
+  ],
+  "mushaf": [
+    {
+      "id": "hafs-v1",
+      "dir": "mushaf/hafs-v1",
+      "pages": 604,
+      "bytes": 95245222,
+      "sha256": "f702ca798221c5eba67f9837c9a07e19fa090cde490899cefc6e82237aff45a1",
+      "edition": "QCF v1 (Madani, Hafs)",
+      "source": "King Fahd Glorious Quran Printing Complex (QCF v1 page fonts)",
+      "license": "Free redistribution with attribution, modification forbidden — KFGQPC"
+    },
+    {
+      "id": "hafs-v2",
+      "dir": "mushaf/hafs-v2",
+      "pages": 604,
+      "bytes": 208416999,
+      "sha256": "86a9feba9299c6bd43a98b59b979eb753b22e966c63ed2d84ce97cb719f65e10",
+      "edition": "QCF v2 (Madani, Hafs)",
+      "source": "King Fahd Glorious Quran Printing Complex (QCF v2 page fonts)",
+      "license": "Free redistribution with attribution, modification forbidden — KFGQPC"
+    },
+    {
+      "id": "hafs-v4",
+      "dir": "mushaf/hafs-v4",
+      "pages": 604,
+      "bytes": 167004795,
+      "sha256": "42816cd13734b78ab51548f7f24303a0fb4aca4828044d709f69a81185c3ca38",
+      "edition": "QCF v4 (Madani, Hafs — COLRv1)",
+      "source": "King Fahd Glorious Quran Printing Complex (QCF v4 page fonts)",
+      "license": "Free redistribution with attribution, modification forbidden — KFGQPC"
+    }
   ]
 }

@@ -6,7 +6,7 @@ permalink: /
 
 # Privacy Policy — QuranSphere
 
-_Last updated: 30 July 2026_
+_Last updated: 8 August 2026_
 
 ## Summary (plain language)
 
@@ -42,6 +42,8 @@ The app makes these requests **directly from your device** to the services below
 | Optional adhan clips | archive.org | the clip requested | download a muezzin you tapped — the clip is fetched from the public archive it already sits on, not from us |
 | Language packs — Quran translation and tafsir | QuranEnc.com — published by the Rowad Translation Center (Saudi Ministry of Islamic Affairs) | the file requested | download the translation and the Mukhtasar tafsir for a language you chose — sent only when you tap that language and confirm the download |
 | Language packs — hadith | `bonaishere.github.io` (GitHub Pages) | the file requested | download the pre-built hadith text for a language you chose. It is pre-built because HadeethEnc serves one hadith per request, and fetching ~2,776 of them from your device would take about eighteen minutes and place that load on a ministry's donated server |
+| Tafsir library | QuranEnc.com (Rowad Translation Center) for each language's Al-Mukhtasar edition; `bonaishere.github.io` (GitHub Pages) for classical Arabic tafsirs we publish | the file requested | download an individual tafsir you chose to add from *More → Settings → Tafsir library* — sent only when you tap it |
+| Mushaf editions | `bonaishere.github.io` (GitHub Pages) | the files requested | download a printed mushaf edition you chose in *More → Settings → Mushaf edition* — sent only when you tap it |
 
 That table is the complete list. The app contacts no other service.
 
@@ -62,6 +64,20 @@ The app ships with Arabic and English inside it. Every other language is downloa
 They are stored in the app's own private storage on your device, and nothing about them is sent anywhere. A download that fails or is interrupted deletes whatever landed rather than leaving a partial language behind. There is no in-app screen for removing a language once it has landed; clearing the app's data in Android settings, or uninstalling the app, removes them all.
 
 The interface text for those languages is **not** downloaded — it ships inside the app, so switching language works before and without any download.
+
+## Tafsir library
+
+Two Arabic tafsirs ship inside the app. *More → Settings → Tafsir library* lets you add more, one at a time: an Al-Mukhtasar edition in your own language (from QuranEnc.com, the same publisher as the language packs above) and classical Arabic tafsirs we publish ourselves (fetched from `bonaishere.github.io`, GitHub Pages). Each row shows its size before you tap it, nothing downloads until you do, and a tafsir you add is also selected for the aya sheet — you can deselect it there without removing the file.
+
+They land in the same private, on-device storage as everything else described here. Unlike a language pack, a downloaded tafsir **can** be removed individually from the same screen; deleting it also deselects it. A download that fails or is interrupted deletes whatever landed rather than leaving a partial file behind.
+
+## Mushaf editions
+
+The app's page reader draws the Quran with a font that ships inside it, so it works offline from the first launch and nothing here is needed to read.
+
+*More → Settings → Mushaf edition* offers other printed editions — the page fonts published by the King Fahd Glorious Quran Printing Complex — that reproduce a particular print exactly. These are **large**: 95 to 208 MB each, because an edition is one font per page for all 604 pages, and they cannot be made smaller (the publisher permits redistribution but not modification). Every row shows its size before you tap it, and nothing downloads until you do.
+
+The files come from `bonaishere.github.io` (GitHub Pages) and land in the app's own private storage. Only the file being fetched is sent; nothing about which edition you chose is reported anywhere. Leaving the screen cancels a download in progress, and what already arrived stays so tapping again resumes rather than starting over — a download that fails deletes the whole partial edition rather than leaving a broken mushaf behind. A downloaded edition can be removed from the same screen at any time, and the reader falls straight back to the built-in one.
 
 ## Downloaded recitation audio
 
@@ -146,7 +162,7 @@ Because those coordinates are frozen at the last time you opened the app, the sa
 |---|---|
 | Location (approximate) | Prayer times, Qibla, nearby mosques. Optional — a manually entered city works instead. Precise location is not used; on Android 11 and older the system grants a broader location permission, but the app only ever reads an approximate fix. |
 | Foreground service (location) | **On by default with "Keep the widget right when I travel", which you can switch off in Locations; it does nothing at all unless you have granted location permission.** Only so the home-screen prayer widget can notice you have moved to another city and recompute, with the app never opened. It runs for a few seconds, shows a notification while it does, and stops itself. It uses the last fix your phone already recorded, and takes one network location (never GPS) when that fix is too old to trust. The coordinates never leave the device. The app does **not** request "Allow all the time". See Location above. |
-| Notifications | The adhan and any reminders you switch on. |
+| Notifications | The adhan and any reminders you switch on, and an ongoing status-bar notification showing the current prayer and a live countdown to the next — **on by default**. It is silent, shows nothing beyond what the home-screen widget already displays, and is computed entirely on your device from the location and settings data already described above; nothing new is sent anywhere for it. Turn it off any time in Settings → Notifications, or dismiss it directly with its own Hide button in the notification itself. |
 | Exact alarms | The adhan must sound at the exact prayer instant. An inexact alarm would make the call to prayer late, which defeats the feature. Android grants this to alarm-clock apps automatically and it cannot be revoked; it lets the app set alarms and nothing else — it reads no data and reaches no network. |
 | Foreground service (media playback) | Plays the full adhan and Quran recitation with the screen off or the app closed. |
 | Run at startup | Re-arms the prayer alarms after you restart your phone **or after the app updates** — both wipe every alarm the app had set, so without this the adhan would silently stop until you next opened it. |
