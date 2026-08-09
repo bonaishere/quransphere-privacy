@@ -6,7 +6,7 @@ permalink: /
 
 # Privacy Policy — QuranSphere
 
-_Last updated: 9 August 2026_
+_Last updated: 10 August 2026_
 
 ## Summary (plain language)
 
@@ -45,6 +45,7 @@ The app makes these requests **directly from your device** to the services below
 | Tafsir library | QuranEnc.com (Rowad Translation Center) for each language's Al-Mukhtasar edition; `bonaishere.github.io` (GitHub Pages) for classical Arabic tafsirs we publish | the file requested | download an individual tafsir you chose to add from *More → Settings → Tafsir library* — sent only when you tap it |
 | Mushaf editions | `bonaishere.github.io` (GitHub Pages) | the files requested | download a printed mushaf edition you chose in *More → Settings → Mushaf edition* — sent only when you tap it |
 | Mushaf frame styles | `bonaishere.github.io` (GitHub Pages) | the two files (the corner ornament and the edge motif) for a frame style you chose | download a decorative page frame you tapped in *More → Settings → Mushaf edition → frame* — sent only when you tap that style |
+| Quran typefaces | `bonaishere.github.io` (GitHub Pages) | the font file requested | download a Quran typeface you chose in *More → Settings → Quran typeface* — sent only when you tap it |
 
 That table is the complete list. The app contacts no other service.
 
@@ -83,6 +84,10 @@ The files come from `bonaishere.github.io` (GitHub Pages) and land in the app's 
 ## Mushaf frame styles
 
 The page reader's default border ships inside the app and needs no network. *More → Settings → Mushaf edition → frame* offers ten further decorative styles — original QuranSphere artwork, not a printed edition — each under 4 KB. Tapping one downloads exactly two SVG files, the corner ornament and the repeating edge motif, from `bonaishere.github.io` (GitHub Pages), and only then: nothing downloads until you tap a style. The files land in the app's own private storage, and nothing about you or which style you picked is sent or reported anywhere — the request carries only the two file names. A downloaded style can be removed from the same screen, and the reader falls back to the style it was drawing before.
+
+## Quran typefaces
+
+The app's default typeface — Uthmanic Hafs, the same face the mushaf page already draws with — ships inside it and needs no network. *More → Settings → Quran typeface* offers four further faces for both readers — real Uthmani-orthography Arabic type, not decorative — each a few hundred KB to a third of a megabyte. Tapping one downloads that single font file from `bonaishere.github.io` (GitHub Pages), and only then: nothing downloads until you tap a face. The file lands in the app's own private storage, and nothing about you or which typeface you picked is sent or reported anywhere — the request carries only the font's file name. A downloaded typeface can be removed from the same screen, and both readers fall back to the bundled default.
 
 ## Downloaded recitation audio
 
