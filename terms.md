@@ -6,7 +6,7 @@ permalink: /terms.html
 
 # Terms of Use — QuranSphere
 
-_Last updated: 30 July 2026_ · [العربية ↓](#شروط-الاستخدام--quransphere)
+_Last updated: 9 August 2026_ · [العربية ↓](#شروط-الاستخدام--quransphere)
 
 By installing or using QuranSphere ("the app"), you agree to these terms. If you do not
 agree with them, please do not use the app.
@@ -110,7 +110,7 @@ by using it.
 
 Some features send a request from your device directly to an independent service — prayer
 times, mosque search, city search, extra translations, recitation audio, azkar audio, optional
-adhan clips, downloaded languages. Those services are
+adhan clips, downloaded languages, downloaded mushaf editions and frame styles. Those services are
 not operated by us, we do not receive or proxy the data, and each is governed by its own
 terms and privacy policy. Their availability, accuracy and conduct are their own.
 
@@ -148,6 +148,19 @@ its Quran translation and Mukhtasar tafsir are downloaded from QuranEnc.com and 
 text from a pre-built file we host; all of it is Rowad Translation Center content, reproduced
 without modification, with the published version shown in Credits. Downloading a language
 does not give you any right in that text beyond your personal use of the app.
+
+**The tafsir library (More → Settings → Tafsir library) adds individual tafsirs on top of the
+two bundled ones, under two different terms depending on where each comes from.** A
+per-language Al-Mukhtasar edition is downloaded from QuranEnc.com under the same Rowad
+Translation Center terms as the language packs above — reproduced without modification, with
+its published version shown in Credits once downloaded. The classical Arabic tafsirs we
+publish ourselves (Tafsir al-Tabari, Ibn Kathir, al-Qurtubi, al-Baghawi) are different: the
+underlying works are centuries-old and in the public domain, but the specific modern critical
+editions we distribute carry a named editor's (muhaqqiq) scholarly apparatus, which is not
+merely typesetting. We ship them by our own decision, on the basis that their publisher does
+not object, not on a public-domain claim over the edition itself — see Credits for the full
+provenance of each. Downloading any of these does not give you any right in the text beyond
+your personal use of the app.
 
 **The interface text in languages other than Arabic and English is machine-translated and has
 not been reviewed by a native speaker.** The app says so on screen. This applies only to the
@@ -198,7 +211,7 @@ mandatory consumer protections available to you where you live.
 
 # شروط الاستخدام — QuranSphere
 
-_آخر تحديث: ٣٠ يوليو ٢٠٢٦_ · [English ↑](#terms-of-use--quransphere)
+_آخر تحديث: ٩ أغسطس ٢٠٢٦_ · [English ↑](#terms-of-use--quransphere)
 
 باستخدامك تطبيق QuranSphere («التطبيق») فإنك توافق على هذه الشروط. وإن كنت لا توافق عليها،
 فالرجاء عدم استخدام التطبيق.
@@ -280,7 +293,7 @@ QuranSphere تطبيق إسلامي مجاني يعمل دون اتصال بال
 
 بعض الميزات ترسل طلباً من جهازك مباشرة إلى خدمة مستقلة — مواقيت الصلاة، والبحث عن المساجد،
 والبحث عن المدن، والترجمات الإضافية، وصوت التلاوة، وصوت الأذكار، وتنزيل الأذانات الاختيارية،
-واللغات المنزَّلة. وهذه
+واللغات المنزَّلة، ونسخ المصحف وأنماط الإطار المنزَّلة. وهذه
 الخدمات
 لا نديرها، ولا نستقبل بياناتها
 ولا نمرّرها، ويحكم كلاً منها شروطها وسياسة خصوصيتها. وتوافرها ودقتها وتصرّفها شأنها هي.
@@ -314,6 +327,16 @@ HadeethEnc.com (مركز رواد الترجمة)، بموجب الشروط ال
 وتفسير المختصر من QuranEnc.com، وتُنزَّل الأحاديث من ملف جاهز نستضيفه نحن؛ وكلّه من محتوى مركز
 رواد الترجمة، منقول دون تعديل، مع بيان رقم النسخة المنشورة في شاشة المصادر. ولا يمنحك تنزيل
 لغةٍ أي حق في نصّها يتجاوز استخدامك الشخصي للتطبيق.
+
+**ومكتبة التفاسير (المزيد ← الإعدادات ← مكتبة التفاسير) تضيف تفاسير مفردة فوق التفسيرين
+المضمَّنين، بشروط مختلفة بحسب مصدر كل منها.** فنسخة «المختصر في التفسير» بلغتك تُنزَّل من
+QuranEnc.com بنفس شروط مركز رواد الترجمة المذكورة أعلاه للغات — منقولة دون تعديل، مع بيان رقم
+نسختها المنشورة في شاشة المصادر بعد تنزيلها. أما التفاسير الكلاسيكية العربية التي ننشرها نحن
+(تفسير الطبري، وابن كثير، والقرطبي، والبغوي) فمختلفة: فالأصل قديم ومشاع، غير أنّ الطبعات
+المحقَّقة تحقيقاً علمياً حديثاً التي نوزّعها تحمل جهد محقِّق مسمّى، وهذا ليس مجرّد تنضيد.
+وننشرها بقرارنا الخاص، على أساس أنّ ناشرها لا يعترض، لا على أساس زعم أنّ الطبعة نفسها مشاع —
+انظر شاشة المصادر لبيان مصدر كلٍّ منها بالتفصيل. ولا يمنحك تنزيل أيٍّ منها أي حق في نصّها يتجاوز
+استخدامك الشخصي للتطبيق.
 
 **ونصوص واجهة التطبيق في اللغات غير العربية والإنجليزية مترجمة آلياً ولم يراجعها ناطق بها.**
 والتطبيق يبيّن ذلك على الشاشة. وهذا يخصّ ألفاظ التطبيق نفسه — الأزرار والعناوين والشروح — دون

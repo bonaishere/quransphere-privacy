@@ -6,7 +6,7 @@ permalink: /
 
 # Privacy Policy — QuranSphere
 
-_Last updated: 8 August 2026_
+_Last updated: 9 August 2026_
 
 ## Summary (plain language)
 
@@ -44,6 +44,7 @@ The app makes these requests **directly from your device** to the services below
 | Language packs — hadith | `bonaishere.github.io` (GitHub Pages) | the file requested | download the pre-built hadith text for a language you chose. It is pre-built because HadeethEnc serves one hadith per request, and fetching ~2,776 of them from your device would take about eighteen minutes and place that load on a ministry's donated server |
 | Tafsir library | QuranEnc.com (Rowad Translation Center) for each language's Al-Mukhtasar edition; `bonaishere.github.io` (GitHub Pages) for classical Arabic tafsirs we publish | the file requested | download an individual tafsir you chose to add from *More → Settings → Tafsir library* — sent only when you tap it |
 | Mushaf editions | `bonaishere.github.io` (GitHub Pages) | the files requested | download a printed mushaf edition you chose in *More → Settings → Mushaf edition* — sent only when you tap it |
+| Mushaf frame styles | `bonaishere.github.io` (GitHub Pages) | the two files (the corner ornament and the edge motif) for a frame style you chose | download a decorative page frame you tapped in *More → Settings → Mushaf edition → frame* — sent only when you tap that style |
 
 That table is the complete list. The app contacts no other service.
 
@@ -78,6 +79,10 @@ The app's page reader draws the Quran with a font that ships inside it, so it wo
 *More → Settings → Mushaf edition* offers other printed editions — the page fonts published by the King Fahd Glorious Quran Printing Complex — that reproduce a particular print exactly. These are **large**: 95 to 208 MB each, because an edition is one font per page for all 604 pages, and they cannot be made smaller (the publisher permits redistribution but not modification). Every row shows its size before you tap it, and nothing downloads until you do.
 
 The files come from `bonaishere.github.io` (GitHub Pages) and land in the app's own private storage. Only the file being fetched is sent; nothing about which edition you chose is reported anywhere. Leaving the screen cancels a download in progress, and what already arrived stays so tapping again resumes rather than starting over — a download that fails deletes the whole partial edition rather than leaving a broken mushaf behind. A downloaded edition can be removed from the same screen at any time, and the reader falls straight back to the built-in one.
+
+## Mushaf frame styles
+
+The page reader's default border ships inside the app and needs no network. *More → Settings → Mushaf edition → frame* offers ten further decorative styles — original QuranSphere artwork, not a printed edition — each under 4 KB. Tapping one downloads exactly two SVG files, the corner ornament and the repeating edge motif, from `bonaishere.github.io` (GitHub Pages), and only then: nothing downloads until you tap a style. The files land in the app's own private storage, and nothing about you or which style you picked is sent or reported anywhere — the request carries only the two file names. A downloaded style can be removed from the same screen, and the reader falls back to the style it was drawing before.
 
 ## Downloaded recitation audio
 
