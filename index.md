@@ -87,7 +87,7 @@ The page reader's default border ships inside the app and needs no network. *Mor
 
 ## Quran typefaces
 
-The app's default typeface — Uthmanic Hafs, the same face the mushaf page already draws with — ships inside it and needs no network. *More → Settings → Quran typeface* offers four further faces for both readers — real Uthmani-orthography Arabic type, not decorative — each a few hundred KB to a third of a megabyte. Tapping one downloads that single font file from `bonaishere.github.io` (GitHub Pages), and only then: nothing downloads until you tap a face. The file lands in the app's own private storage, and nothing about you or which typeface you picked is sent or reported anywhere — the request carries only the font's file name. A downloaded typeface can be removed from the same screen, and both readers fall back to the bundled default.
+The app's default typeface — Uthmanic Hafs — ships inside the app and needs no network. *More → Settings → Quran typeface* offers four further faces for both readers — real Uthmani-orthography Arabic type, not decorative — each a few hundred KB to a third of a megabyte. Tapping one downloads that single font file from `bonaishere.github.io` (GitHub Pages), and only then: nothing downloads until you tap a face. The file lands in the app's own private storage, and nothing about you or which typeface you picked is sent or reported anywhere — the request carries only the font's file name. A downloaded typeface can be removed from the same screen, and both readers fall back to the bundled default.
 
 ## Downloaded recitation audio
 
