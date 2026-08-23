@@ -6,7 +6,7 @@ permalink: /
 
 # Privacy Policy — QuranSphere
 
-_Last updated: 10 August 2026_
+_Last updated: 23 August 2026_
 
 ## Summary (plain language)
 
@@ -135,7 +135,7 @@ muezzin you chose.
 
 ## Wear OS watch and home-screen widgets
 
-If you install the QuranSphere companion app on a paired Wear OS watch, the phone shares your prayer times, Qibla direction and tasbih count with it so the watch can show them offline. This moves between your phone and your watch over Android's Wear Data Layer — part of Google Play Services on both devices — so it stays **on your devices**, never reaches a server we operate (we operate none), and the watch app makes no network requests of its own. The home-screen widgets (next-prayer countdown and tasbih) read that same on-device data and send nothing anywhere.
+If you install the QuranSphere companion app on a paired Wear OS watch, the phone shares your prayer times, Qibla direction and tasbih count with it so the watch can show them offline. This moves between your phone and your watch over Android's Wear Data Layer — part of Google Play Services on both devices — so it stays **on your devices**, never reaches a server we operate (we operate none), and the watch app makes no network requests of its own. The home-screen widgets (next-prayer countdown and tasbih) also only read on-device data; the separate periodic prayer refresh described below may update that data through Aladhan.
 
 ## Location
 
@@ -153,30 +153,30 @@ Even switched on, it is narrow by design:
 
 - It uses **the last location your phone has already recorded** for some other app or system service, whenever that reading is recent enough to still mean anything.
 - When it is not — which is exactly what arriving somewhere new looks like — it takes **one network location** (worked out from cell towers and Wi-Fi). It never turns on GPS, and it does this at most twice a day — or, in the few minutes after your phone tells us its timezone changed, as soon as it can. If it cannot get one then (location switched off, no signal), it waits longer before each further attempt — 15 minutes, then half an hour, then an hour, up to eight — rather than asking again and again.
-- It does both **only for the widget**, and only if you are on "Current location" — a city you saved by hand is never overridden.
+- It does both **only to keep prayer times current** on the widget, status notification, watch and alarm schedule, and only if you are on "Current location" — a city you saved by hand is never overridden.
 - If it cannot work out where you are, the widget **stops showing times** and asks you to open the app, rather than showing you another city's prayer times as though they were yours.
-- The coordinates are used **on your device only**, to recompute prayer times. Turning this on sends nothing new anywhere. The one reading the widget is currently working from is kept on your device so it can draw without asking again; nothing older is retained.
+- The one reading the prayer surfaces are currently working from is kept on your device so they can update without asking again; nothing older is retained. On an OS-scheduled background refresh, it is rounded to two decimal places and sent to Aladhan with your chosen calculation method so today's and tomorrow's prayer times can use the same online source as an open app. No account, identifier, analytics or tracking value is attached to that request.
 - It changes nothing until you have actually moved about 25 km.
 
 You can switch it off in the app at any time, or revoke the permission in Android's settings — the widget re-checks the permission every time it draws, and simply goes back to the last coordinates the app saw.
 
 You can skip location permission entirely and enter a city by hand instead; every location-based feature works that way, and the travel option is then neither needed nor offered.
 
-**Prayer alerts do the same thing with the location already on your device, and take no new reading of any kind.** So that the adhan does not stop on a phone you have not opened in a while, the app keeps a queue of upcoming prayer alerts and extends it — when a prayer alert fires, when your phone restarts, and when Android wakes the app for a moment (see *Background processing* below). Extending it recomputes prayer times **on your device** from the coordinates already saved and the settings you chose. Nothing is sent, nothing is fetched, and unlike the widget option above this never asks your phone where it is: it only reads what is already stored.
+**Prayer alerts use the same resolved location as the other prayer surfaces.** So that the adhan does not stop on a phone you have not opened in a while, the app keeps a queue of upcoming prayer alerts and extends it — when a prayer alert fires, when your phone restarts, and when Android wakes the app for a moment (see *Background processing* below). A prayer or restart extends the far horizon from the on-device calculator. On a periodic background wake, the task first reconciles the location already stored by the foreground service, then asks Aladhan for today and tomorrow; the same returned times feed both the displayed prayer data and those near-term alarms. If the request cannot be made, the complete alarm queue is still rebuilt locally, so loss of internet cannot make the adhan run out.
 
-Because those coordinates are frozen at the last time you opened the app, the same travelling problem applies — so the app applies the same rule. If your phone's timezone no longer matches the one those coordinates were saved in, and you have not pinned a city by hand, the app **stops extending the queue** rather than go on announcing the prayer times of the city you left. Alerts already scheduled still sound; opening the app puts it right.
+When travel-following obtains a fix at least about 25 km away, the corrected coordinates are shared by the widget, status notification, watch and alarm scheduler. The scheduler replaces already-armed old-city alarms rather than merely extending past them. Until a trustworthy fix exists, a timezone mismatch still makes native surfaces refuse to calculate another city's schedule rather than present it as current.
 
 ## Permissions and why each is needed
 
 | Permission | Why |
 |---|---|
 | Location (approximate) | Prayer times, Qibla, nearby mosques. Optional — a manually entered city works instead. Precise location is not used; on Android 11 and older the system grants a broader location permission, but the app only ever reads an approximate fix. |
-| Foreground service (location) | **On by default with "Keep the widget right when I travel", which you can switch off in Locations; it does nothing at all unless you have granted location permission.** Only so the home-screen prayer widget can notice you have moved to another city and recompute, with the app never opened. It runs for a few seconds, shows a notification while it does, and stops itself. It uses the last fix your phone already recorded, and takes one network location (never GPS) when that fix is too old to trust. The coordinates never leave the device. The app does **not** request "Allow all the time". See Location above. |
+| Foreground service (location) | **On by default with "Keep the widget right when I travel", which you can switch off in Locations; it does nothing at all unless you have granted location permission.** Only so prayer times can notice you have moved to another city and recompute, with the app never opened. It runs for a few seconds, shows a notification while it does, and stops itself. It uses the last fix your phone already recorded, and takes one network location (never GPS) when that fix is too old to trust. The service stores that fix on-device; the separate periodic prayer refresh may later send the rounded coordinates to Aladhan as described above. The app does **not** request "Allow all the time". See Location above. |
 | Notifications | The adhan and any reminders you switch on, and an ongoing status-bar notification showing the current prayer and a live countdown to the next — **on by default**. It is silent, shows nothing beyond what the home-screen widget already displays, and is computed entirely on your device from the location and settings data already described above; nothing new is sent anywhere for it. Turn it off any time in Settings → Notifications, or dismiss it directly with its own Hide button in the notification itself. |
 | Exact alarms | The adhan must sound at the exact prayer instant. An inexact alarm would make the call to prayer late, which defeats the feature. Android grants this to alarm-clock apps automatically and it cannot be revoked; it lets the app set alarms and nothing else — it reads no data and reaches no network. |
 | Foreground service (media playback) | Plays the full adhan and Quran recitation with the screen off or the app closed. |
 | Run at startup | Re-arms the prayer alarms after you restart your phone **or after the app updates** — both wipe every alarm the app had set, so without this the adhan would silently stop until you next opened it. |
-| Background processing | Lets Android wake the app roughly twice a day, for a moment, to extend the queue of upcoming prayer alerts. Nothing is sent or fetched: it reads the settings and the last location already on your device, recomputes prayer times on the device, and re-sets the alarms. Without it the queue eventually runs out and the adhan stops on a phone that has not been opened for a while. |
+| Background processing | Lets the OS wake the app roughly twice a day, for a moment, to extend upcoming prayer alerts and refresh widget/status prayer data. It sends coordinates rounded to about 1 km and the chosen calculation settings to `api.aladhan.com` for today's and tomorrow's times; no identity, analytics or tracking value is attached. If offline or the service fails, it recomputes every required day on-device and still re-sets the alarms. Without it the queue eventually runs out and displayed online-tier times cannot refresh on a phone that has not been opened for a while. |
 | Ignore battery optimisations | Optional, and only prompted. Without it, some manufacturers' battery managers delay or kill the exact prayer alarm. |
 | Vibrate | Vibrate-mode prayer alerts, tasbih haptics, and the haptic pulse in the accessible Qibla mode. |
 
