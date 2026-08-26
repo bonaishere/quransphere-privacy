@@ -6,7 +6,7 @@ permalink: /
 
 # Privacy Policy — QuranSphere
 
-_Last updated: 23 August 2026_
+_Last updated: 26 August 2026_
 
 ## Summary (plain language)
 
@@ -40,6 +40,7 @@ The app makes these requests **directly from your device** to the services below
 | Recitation audio | EveryAyah | the surah/verse requested | stream or download the recitation |
 | Azkar audio | hisnmuslim.com | the dhikr requested | stream a recording when you press play, and cache it on the device once it has played through, so replaying it later needs no further request |
 | Optional adhan clips | archive.org | the clip requested | download a muezzin you tapped — the clip is fetched from the public archive it already sits on, not from us |
+| Islamic Videos | `d1.islamhouse.com` (IslamHouse.com's own file host) | the video requested | stream a video you tapped in *More → Videos* — the video is fetched from IslamHouse's own host, not from us; nothing is downloaded until you tap it |
 | Language packs — Quran translation and tafsir | QuranEnc.com — published by the Rowad Translation Center (Saudi Ministry of Islamic Affairs) | the file requested | download the translation and the Mukhtasar tafsir for a language you chose — sent only when you tap that language and confirm the download |
 | Language packs — hadith | `bonaishere.github.io` (GitHub Pages) | the file requested | download the pre-built hadith text for a language you chose. It is pre-built because HadeethEnc serves one hadith per request, and fetching ~2,776 of them from your device would take about eighteen minutes and place that load on a ministry's donated server |
 | Tafsir library | QuranEnc.com (Rowad Translation Center) for each language's Al-Mukhtasar edition; `bonaishere.github.io` (GitHub Pages) for classical Arabic tafsirs we publish | the file requested | download an individual tafsir you chose to add from *More → Settings → Tafsir library* — sent only when you tap it |
