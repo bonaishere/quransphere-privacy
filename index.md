@@ -16,6 +16,8 @@ We have no analytics, no advertising SDKs, and no crash-reporting backend. There
 
 One kind of data does leave your phone: to show prayer times and find nearby mosques, the app sends your **approximate location** straight from your device to independent services. Android is only ever asked for coarse location (never precise GPS), and the coordinates are rounded to about one kilometre before they are sent — enough for prayer times and a mosque search, not enough to place you. It goes to them, not to us, and it is never tied to your name or any identifier. The details are below, and we would rather spell them out than hide behind "we collect nothing".
 
+**If location is off, denied, or unavailable, the app still needs to show correct prayer times, so it falls back to your IP address.** With no location permission granted at all, an IP-geolocation lookup (see the table below) tells the app roughly which city you're in from your internet connection — no GPS, no permission prompt. This only runs when a saved city and GPS have both failed to produce coordinates, and it is why "decline location and enter a city by hand" is the only way to stop the app inferring your city automatically.
+
 ## What stays on your device (never sent to us)
 
 - Reading state, bookmarks, notes, highlights, collections
@@ -33,6 +35,7 @@ The app makes these requests **directly from your device** to the services below
 | Feature | Service | What is sent | Why |
 |---|---|---|---|
 | Prayer times | Aladhan API | your approximate coordinates, rounded to ~1 km | fetch precise times for your location — sent automatically whenever the app knows where you are |
+| Location fallback (only when GPS is off, denied, or fails) | ipapi.co | your IP address (used by the service to look up a city; nothing else is sent) | work out an approximate location without GPS, so prayer times and Qibla still have somewhere to start from — sent automatically only as a last resort, before falling back to no location at all |
 | Nearby mosques | OpenStreetMap Overpass — public mirrors run by unaffiliated operators (`overpass.kumi.systems`, `overpass-api.de`, `overpass.private.coffee`, `overpass.osm.jp`), tried in order until one answers, and sometimes two at once when the first is slow | your approximate coordinates, rounded to ~1 km | find mosques around you — sent only when you open that screen |
 | City search | OpenStreetMap Nominatim | the city text you type | turn it into coordinates |
 | Place name and auto calc-method | Android system geocoder (Google on most devices) | your approximate coordinates | turn your coordinates into a place name — shown on the home-screen widget so you can see which location its times are for — and look up your country to pick the locally-conventional calculation method. Sent automatically whenever the app knows where you are. The place name is kept on your device and is never sent anywhere. |
@@ -146,6 +149,8 @@ Location is used only to compute prayer times, the Qibla direction, and nearby m
 **Approximate only, and rounded again before it is sent.** The app asks Android for coarse location and never for precise GPS, then rounds the coordinates to two decimal places (about one kilometre) before any request leaves the device. On Android 12 and newer it cannot access precise location at all. On older versions the permission is coarser-grained, but the app still only ever reads an approximate fix.
 
 Your coordinates are sent to the services named above so those features work. They are **never stored on any server we operate** — we operate none — and are never associated with an identity. We cannot tell you who requested what, because we never see it.
+
+**When GPS gives nothing — permission denied, Location Services off, or the fix fails — the app asks ipapi.co to place you from your IP address instead**, so prayer times and Qibla still work rather than showing an empty screen. This needs no permission and no prompt, because it uses no location hardware at all; it only ever runs after a real GPS attempt has already failed and no saved city is active. It is as approximate as your internet connection allows (typically city-level, sometimes less precise on mobile data or a VPN). The only way to stop it running is the same one that stops everything else here: enter a city by hand in *More → Locations* instead of using "Current location".
 
 **Letting the widget follow you when you travel is on by default, does nothing unless you have given the app location permission, and is used for exactly one thing.** The home-screen prayer widget computes prayer times on your device, so it stays correct for years without the app ever being opened — but the coordinates it uses are frozen at the last time the app ran, so if you move to another city it would go on showing the times of the city you left, with nothing on the card to say so. **"Keep the widget right when I travel"** in Locations is what prevents that, and you can switch it off there.
 
