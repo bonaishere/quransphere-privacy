@@ -229,17 +229,52 @@
   ],
   "tafsir": [
     {
-      "id": "ar.tabari",
-      "file": "tafsir-tabari.db",
-      "bytes": 53559296,
-      "sha256": "d50224d76b8505d715a628658b798dec14fe933134e0c3681637313e72f45707",
-      "rows": 6145,
+      "id": "ar.alusi",
+      "file": "tafsir-alusi.db",
+      "bytes": 61046784,
+      "sha256": "59433f6f444494a399f8d41e7cb5a35a70bf3a4578942cdd0101657865949f25",
+      "rows": 6236,
+      "source": "روح المعاني — تأليف محمود شكري الآلوسي (ت 1270هـ)؛ النص الرقمي من QUL (qul.tarteel.ai، مورد التفسير رقم 501)",
+      "license": "No written grant sought — shipped by project-owner decision (non-profit, fully free app), source cited; see content-pipeline/LEGAL.md"
+    },
+    {
+      "id": "ar.baghawi",
+      "file": "tafsir-baghawi.db",
+      "bytes": 37842944,
+      "sha256": "410cff7821974bf1c9c97d6f7851393413deb83f140e104f214f0aa53a815330",
+      "rows": 6230,
       "excludedSurahs": [
-        40,
         114
       ],
-      "source": "جامع البيان في تأويل آي القرآن — تأليف أبي جعفر محمد بن جرير الطبري (ت ٣١٠هـ/٩٢٣م)؛ تحقيق أحمد شاكر؛ النص الرقمي من الموسوعة القرآنية (quranpedia.net، كتاب ٤)",
-      "license": "The underlying tafsir is public domain by age — al-Tabari died 310 AH / 923 CE. This quranpedia.net edition, however, is a modern critical tahqiq by Ahmad Shakir for Mu'assasat al-Risala, and that scholarly apparatus (collation, hadith takhrij) is not typesetting. It ships by project-owner decision, on the basis that the publisher does not object — not on a public-domain finding for this edition. See docs/PERMISSIONS.md #15 and TAFSIR_CLASSICS_CLEARED in this file."
+      "source": "معالم التنزيل — تأليف محيي السنة أبي محمد الحسين بن مسعود البغوي (ت ٥١٦هـ/١١٢٢م)؛ تحقيق محمد عبد الله النمر وآخرين؛ النص الرقمي من الموسوعة القرآنية (quranpedia.net، كتاب ٢)",
+      "license": "The underlying tafsir is public domain by age — al-Baghawi died 516 AH / 1122 CE. This quranpedia.net edition, however, is a modern critical tahqiq by Muhammad 'Abdullah al-Nimr and others for Dar Tayyiba, and that scholarly apparatus is not typesetting. It ships by project-owner decision, on the basis that the publisher does not object — not on a public-domain finding for this edition. See docs/PERMISSIONS.md #18 and TAFSIR_CLASSICS_CLEARED in this file."
+    },
+    {
+      "id": "ar.baydawi",
+      "file": "tafsir-baydawi.db",
+      "bytes": 11599872,
+      "sha256": "1e1014c32d22fed90ebdc884278c4b5cae399ee7f8a0edb6be4f522c9aa855a2",
+      "rows": 3811,
+      "source": "أنوار التنزيل وأسرار التأويل — تأليف ناصر الدين البيضاوي (ت 685هـ)؛ النص الرقمي من QUL (qul.tarteel.ai، مورد التفسير رقم 518)",
+      "license": "No written grant sought — shipped by project-owner decision (non-profit, fully free app), source cited; see content-pipeline/LEGAL.md"
+    },
+    {
+      "id": "ar.ibnashur",
+      "file": "tafsir-ibnashur.db",
+      "bytes": 83570688,
+      "sha256": "72c4b0f906376f8f9f91eb314464ce77338ccd1a528cc7984419b1c79aedaa5b",
+      "rows": 6236,
+      "source": "التحرير والتنوير — تأليف محمد الطاهر بن عاشور (ت 1393هـ)؛ النص الرقمي من QUL (qul.tarteel.ai، مورد التفسير رقم 25)",
+      "license": "No written grant sought — shipped by project-owner decision (non-profit, fully free app), source cited; see content-pipeline/LEGAL.md"
+    },
+    {
+      "id": "ar.ibnjuzayy",
+      "file": "tafsir-ibnjuzayy.db",
+      "bytes": 11694080,
+      "sha256": "ea0af597a93e8c972bfa5e013d1b67b13590b4ec6beacc8c20f9d0baf80952d3",
+      "rows": 5439,
+      "source": "التسهيل لعلوم التنزيل — تأليف محمد بن أحمد بن جزي الكلبي (ت 741هـ)؛ النص الرقمي من QUL (qul.tarteel.ai، مورد التفسير رقم 491)",
+      "license": "No written grant sought — shipped by project-owner decision (non-profit, fully free app), source cited; see content-pipeline/LEGAL.md"
     },
     {
       "id": "ar.ibnkathir",
@@ -254,6 +289,33 @@
       "license": "The underlying tafsir is public domain by age — Ibn Kathir died 774 AH / 1373 CE. This quranpedia.net edition, however, is a modern critical tahqiq by Sami Salama for Dar Tayyiba, and that scholarly apparatus (collation, hadith takhrij) is not typesetting. It ships by project-owner decision, on the basis that the publisher does not object — not on a public-domain finding for this edition. See docs/PERMISSIONS.md #16 and TAFSIR_CLASSICS_CLEARED in this file."
     },
     {
+      "id": "ar.jalalayn",
+      "file": "tafsir-jalalayn.db",
+      "bytes": 3203072,
+      "sha256": "23875959b5cdbfaeb985c7e656cbcf3305988376a240143fe8889139bbecc203",
+      "rows": 6010,
+      "source": "تفسير الجلالين — تأليف جلال الدين المحلي (ت 864هـ) وجلال الدين السيوطي (ت 911هـ)؛ النص الرقمي من QUL (qul.tarteel.ai، مورد التفسير رقم 523)",
+      "license": "No written grant sought — shipped by project-owner decision (non-profit, fully free app), source cited; see content-pipeline/LEGAL.md"
+    },
+    {
+      "id": "ar.kashshaf",
+      "file": "tafsir-kashshaf.db",
+      "bytes": 32174080,
+      "sha256": "d4a7792d7a30bacadff737028db8d4b45a16c48cb0e1e9ff049ff73708903192",
+      "rows": 6236,
+      "source": "الكشاف — تأليف محمود بن عمر الزمخشري (ت 538هـ)؛ النص الرقمي من QUL (qul.tarteel.ai، مورد التفسير رقم 510)",
+      "license": "No written grant sought — shipped by project-owner decision (non-profit, fully free app), source cited; see content-pipeline/LEGAL.md"
+    },
+    {
+      "id": "ar.nasafi",
+      "file": "tafsir-nasafi.db",
+      "bytes": 9494528,
+      "sha256": "b6cf02a11daedf3a34004ccb025aeb786d803400d9d67e15e5385700ba9c512d",
+      "rows": 6159,
+      "source": "مدارك التنزيل وحقائق التأويل — تأليف عبد الله بن أحمد النسفي (ت 710هـ)؛ النص الرقمي من QUL (qul.tarteel.ai، مورد التفسير رقم 514)",
+      "license": "No written grant sought — shipped by project-owner decision (non-profit, fully free app), source cited; see content-pipeline/LEGAL.md"
+    },
+    {
       "id": "ar.qurtubi",
       "file": "tafsir-qurtubi.db",
       "bytes": 85815296,
@@ -266,16 +328,44 @@
       "license": "The underlying tafsir is public domain by age — al-Qurtubi died 671 AH / 1273 CE. This quranpedia.net edition, however, is a modern critical tahqiq by Ahmad al-Bardouni for Dar al-Kutub al-Misriyya, and that scholarly apparatus is not typesetting. It ships by project-owner decision, on the basis that the publisher does not object — not on a public-domain finding for this edition. See docs/PERMISSIONS.md #17 and TAFSIR_CLASSICS_CLEARED in this file."
     },
     {
-      "id": "ar.baghawi",
-      "file": "tafsir-baghawi.db",
-      "bytes": 37842944,
-      "sha256": "410cff7821974bf1c9c97d6f7851393413deb83f140e104f214f0aa53a815330",
-      "rows": 6230,
+      "id": "ar.razi",
+      "file": "tafsir-razi.db",
+      "bytes": 99528704,
+      "sha256": "fd0ce2463430591655b333ef98b8421d3e6af4aa56bf67637d29930e2af648af",
+      "rows": 6236,
+      "source": "مفاتيح الغيب (التفسير الكبير) — تأليف فخر الدين الرازي (ت 606هـ)؛ النص الرقمي من QUL (qul.tarteel.ai، مورد التفسير رقم 488)",
+      "license": "No written grant sought — shipped by project-owner decision (non-profit, fully free app), source cited; see content-pipeline/LEGAL.md"
+    },
+    {
+      "id": "ar.saadi",
+      "file": "tafsir-saadi.db",
+      "bytes": 7331840,
+      "sha256": "f9e7ae51436baad6e3aa99c64b3f73bda05ba8a76cb123ef47f54b27ddbff318",
+      "rows": 6177,
+      "source": "تيسير الكريم الرحمن (تفسير السعدي) — تأليف عبد الرحمن بن ناصر السعدي (ت 1376هـ)؛ النص الرقمي من QUL (qul.tarteel.ai، مورد التفسير رقم 24)",
+      "license": "No written grant sought — shipped by project-owner decision (non-profit, fully free app), source cited; see content-pipeline/LEGAL.md"
+    },
+    {
+      "id": "ar.shinqiti",
+      "file": "tafsir-shinqiti.db",
+      "bytes": 18546688,
+      "sha256": "d5cbfe6d9d7daf124c88b5a1a1698d3a2eb16e8cb43732826bf2c1ab25c5be01",
+      "rows": 2320,
+      "source": "أضواء البيان في إيضاح القرآن بالقرآن — تأليف محمد الأمين الشنقيطي (ت 1393هـ)؛ النص الرقمي من QUL (qul.tarteel.ai، مورد التفسير رقم 525)",
+      "license": "No written grant sought — shipped by project-owner decision (non-profit, fully free app), source cited; see content-pipeline/LEGAL.md"
+    },
+    {
+      "id": "ar.tabari",
+      "file": "tafsir-tabari.db",
+      "bytes": 53559296,
+      "sha256": "d50224d76b8505d715a628658b798dec14fe933134e0c3681637313e72f45707",
+      "rows": 6145,
       "excludedSurahs": [
+        40,
         114
       ],
-      "source": "معالم التنزيل — تأليف محيي السنة أبي محمد الحسين بن مسعود البغوي (ت ٥١٦هـ/١١٢٢م)؛ تحقيق محمد عبد الله النمر وآخرين؛ النص الرقمي من الموسوعة القرآنية (quranpedia.net، كتاب ٢)",
-      "license": "The underlying tafsir is public domain by age — al-Baghawi died 516 AH / 1122 CE. This quranpedia.net edition, however, is a modern critical tahqiq by Muhammad 'Abdullah al-Nimr and others for Dar Tayyiba, and that scholarly apparatus is not typesetting. It ships by project-owner decision, on the basis that the publisher does not object — not on a public-domain finding for this edition. See docs/PERMISSIONS.md #18 and TAFSIR_CLASSICS_CLEARED in this file."
+      "source": "جامع البيان في تأويل آي القرآن — تأليف أبي جعفر محمد بن جرير الطبري (ت ٣١٠هـ/٩٢٣م)؛ تحقيق أحمد شاكر؛ النص الرقمي من الموسوعة القرآنية (quranpedia.net، كتاب ٤)",
+      "license": "The underlying tafsir is public domain by age — al-Tabari died 310 AH / 923 CE. This quranpedia.net edition, however, is a modern critical tahqiq by Ahmad Shakir for Mu'assasat al-Risala, and that scholarly apparatus (collation, hadith takhrij) is not typesetting. It ships by project-owner decision, on the basis that the publisher does not object — not on a public-domain finding for this edition. See docs/PERMISSIONS.md #15 and TAFSIR_CLASSICS_CLEARED in this file."
     }
   ],
   "mushaf": [
