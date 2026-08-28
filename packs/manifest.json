@@ -259,15 +259,6 @@
       "license": "No written grant sought — shipped by project-owner decision (non-profit, fully free app), source cited; see content-pipeline/LEGAL.md"
     },
     {
-      "id": "ar.ibnashur",
-      "file": "tafsir-ibnashur.db",
-      "bytes": 83570688,
-      "sha256": "72c4b0f906376f8f9f91eb314464ce77338ccd1a528cc7984419b1c79aedaa5b",
-      "rows": 6236,
-      "source": "التحرير والتنوير — تأليف محمد الطاهر بن عاشور (ت 1393هـ)؛ النص الرقمي من QUL (qul.tarteel.ai، مورد التفسير رقم 25)",
-      "license": "No written grant sought — shipped by project-owner decision (non-profit, fully free app), source cited; see content-pipeline/LEGAL.md"
-    },
-    {
       "id": "ar.ibnjuzayy",
       "file": "tafsir-ibnjuzayy.db",
       "bytes": 11694080,
@@ -326,15 +317,6 @@
       ],
       "source": "الجامع لأحكام القرآن — تأليف شمس الدين أبي عبد الله محمد بن أحمد الأنصاري القرطبي (ت ٦٧١هـ/١٢٧٣م)؛ تحقيق أحمد البردوني؛ النص الرقمي من الموسوعة القرآنية (quranpedia.net، كتاب ٣٦٦)",
       "license": "The underlying tafsir is public domain by age — al-Qurtubi died 671 AH / 1273 CE. This quranpedia.net edition, however, is a modern critical tahqiq by Ahmad al-Bardouni for Dar al-Kutub al-Misriyya, and that scholarly apparatus is not typesetting. It ships by project-owner decision, on the basis that the publisher does not object — not on a public-domain finding for this edition. See docs/PERMISSIONS.md #17 and TAFSIR_CLASSICS_CLEARED in this file."
-    },
-    {
-      "id": "ar.razi",
-      "file": "tafsir-razi.db",
-      "bytes": 99528704,
-      "sha256": "fd0ce2463430591655b333ef98b8421d3e6af4aa56bf67637d29930e2af648af",
-      "rows": 6236,
-      "source": "مفاتيح الغيب (التفسير الكبير) — تأليف فخر الدين الرازي (ت 606هـ)؛ النص الرقمي من QUL (qul.tarteel.ai، مورد التفسير رقم 488)",
-      "license": "No written grant sought — shipped by project-owner decision (non-profit, fully free app), source cited; see content-pipeline/LEGAL.md"
     },
     {
       "id": "ar.saadi",
