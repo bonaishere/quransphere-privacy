@@ -6,7 +6,7 @@ permalink: /
 
 # Privacy Policy — QuranSphere
 
-_Last updated: 27 August 2026_
+_Last updated: 8 September 2026_
 
 ## Summary (plain language)
 
@@ -187,8 +187,9 @@ When travel-following obtains a fix at least about 25 km away, the corrected coo
 | Background processing | Lets the OS wake the app roughly twice a day, for a moment, to extend upcoming prayer alerts and refresh widget/status prayer data. It sends coordinates rounded to about 1 km and the chosen calculation settings to `api.aladhan.com` for today's and tomorrow's times; no identity, analytics or tracking value is attached. If offline or the service fails, it recomputes every required day on-device and still re-sets the alarms. Without it the queue eventually runs out and displayed online-tier times cannot refresh on a phone that has not been opened for a while. |
 | Ignore battery optimisations | Optional, and only prompted. Without it, some manufacturers' battery managers delay or kill the exact prayer alarm. |
 | Vibrate | Vibrate-mode prayer alerts, tasbih haptics, and the haptic pulse in the accessible Qibla mode. |
+| Camera (optional) | Only for the optional AR Qibla view, which draws the Qibla direction over a live camera preview so you can line it up with a real landmark. You are asked the first time you turn it on, and the compass and blind-accessible Qibla modes work fully without it. **The preview is shown and discarded frame by frame — no photo or video is taken, stored, sent, or linked to you** — and nothing else in the app uses the camera. |
 
-The app does **not** request camera, microphone, contacts, or file-storage access.
+The app does **not** request microphone, contacts, or file-storage access, and the camera is used only as described above.
 
 ## Importing your own adhan
 
